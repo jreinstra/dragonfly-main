@@ -1,9 +1,3 @@
-<script>
-if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) 
-{
-    window.location.assign("http://www.beam.la/StaticMobile.html")
-}
-</script>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,7 +11,7 @@ if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) )
 
     <!-- Bootstrap core CSS -->
     <link href="http://beam.la/bootstrap.css" rel="stylesheet">
-        <link href="http://beam.la/glyphicons-halflings-regular.svg" >
+    <link href="http://beam.la/glyphicons-halflings-regular.svg" >
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
