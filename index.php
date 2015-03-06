@@ -13,7 +13,7 @@ if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) )
     <meta name="author" content="">
     <link rel="shortcut icon" href="../Test/assets/ico/favicon.png">
 
-    <title>Dragonfly - Solar Energy</title>
+    <title>Dragonfly - Solar Ernergy</title>
 
     <!-- Bootstrap core CSS -->
     <link href="http://beam.la/bootstrap.css" rel="stylesheet">
