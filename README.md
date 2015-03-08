@@ -1,4 +1,4 @@
-BEAMBackend
+Dragonfly Search
 ===========
 
-Server backend for BEAM written in PHP.
+Main code repository for Dragonfly.
