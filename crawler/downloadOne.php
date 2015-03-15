@@ -22,7 +22,7 @@ $localfile = fopen($_SERVER["DOCUMENT_ROOT"] . "/documents/" . $docID . ".html",
 fwrite($localfile, $contents);
 fclose($localfile);
 echo "http://localhost:8080/crawler/parseOne.php?d=" . $docID . "&b=" . urlencode($baseUrl);
-echo "file: " . file_get_contents("/crawler/parseOne.php?d=" . $docID . "&b=" . urlencode($baseUrl) . "&s=" . urlencode($subject), true);
+echo "file: " . file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/crawler/parseOne.php?d=" . $docID . "&b=" . urlencode($baseUrl) . "&s=" . urlencode($subject), true);
 
 
 function getDocID($url) {
