@@ -20,7 +20,7 @@
         <h4 class="modal-title text-left" id="myModalLabel">en.wikipedia.org</h4>
       </div>
       <div class="modal-body">
-        <iframe src="http://en.wikipedia.org/wiki/<?php echo $subject; ?>" style="text-decoration:none; width:100%; height:75%;"></iframe>
+        <!--<iframe src="http://en.wikipedia.org/wiki/<?php echo $subject; ?>" style="text-decoration:none; width:100%; height:75%;"></iframe>-->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
