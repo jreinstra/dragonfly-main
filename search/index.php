@@ -73,7 +73,7 @@ color:#606060 ;
 
 <form action="/search/" method="GET">
 <div class="input-group">
- <input name="q" placeholder="<?php echo $subject; ?>" type="text" class="form-control">
+ <input name="q" value="<?php echo $subject; ?>" type="text" class="form-control">
  <span style="color:#C00000; background-color:#F8F8F8 ;" class="input-group-addon"><input type="submit" value="Fly" style="color:#C00000; text-decoration:none;"></span>
 </form>
 </div>
