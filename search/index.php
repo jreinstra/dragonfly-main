@@ -1,5 +1,6 @@
 <?php
 $q = $_GET["q"];
+die($q);
 /*if(!isset($q) || strlen($q) < 1) {
 	header("Location: /");
 	die();
