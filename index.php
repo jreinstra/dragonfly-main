@@ -1,3 +1,15 @@
+<?php
+  $bg = array('backgroundimages/bananaback1.jpg', 'backgroundimages/bananaback2.jpg', 'backgroundimages/bananaback3.jpg', 'backgroundimages/bananaback4.jpg', 'backgroundimages/bananaback5.jpg', 'backgroundimages/bananaback6.jpg', 'backgroundimages/bananaback7.jpg', 'backgroundimages/bananaback8.jpg', 'backgroundimages/bananaback10.jpg', 'backgroundimages/bananaback11.jpg', 'backgroundimages/bananaback12.jpg', 'backgroundimages/bananaback13.jpg', 'backgroundimages/bananaback14.jpg'); // array of filenames
+
+  $i = rand(0, count($bg)-1); // generate random number size of the array
+  $backgroundimage = "$bg[$i]"; // set variable equal to which random filename was chosen
+  $rad = array('search/?q=steve+jobs', 'search/?q=steven+colbert', 'search/?q=john+stewart', 'search/?q=apple', 'search/?q=iPhone', 'search/?q=holocaust', 'search/?q=chicken', 'search/?q=armadillo'); // array of filenames
+
+  $n = rand(0, count($rad)-1); // generate random number size of the array
+  $radsearch = "$rad[$n]"; // set variable equal to which random filename was chosen
+
+?>
+
 <!DOCTYPE html>
 <!-- saved from url=(0037)http://dragonflyapp.com/betahome.php# -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -22,7 +34,7 @@
     <link href="http://dragonflyapp.com/Test/dist/css/carousel.css" rel="stylesheet">
   <style>
   body {
-background: url("bananaback12.jpg") no-repeat;
+background: url("<?php echo $backgroundimage; ?>") no-repeat;
 background-size: 100%;
   }
    h1 {
@@ -104,8 +116,8 @@ img {
 	</div>
 </form>
 <center><div class="btn-group" style="padding:5px; color:rgba(255, 255,255, .6)">
-<button type="button" class="btn btn-default" style="background-color:rgba(255, 255, 255, .6)"><a href="http://beam.la/DragonflyDesktop.html" style="color:black; text-decoration:none;">Trending</a></button>
-<button type="button" class="btn btn-default center" style="background-color: rgba(255, 255, 255, .6)"><a href="http://beam.la/DragonflyDesktop.html" style="color:black; text-decoration:none;">Recommended</a></button>
+<button type="button" class="btn btn-default" style="background-color:rgba(255, 255, 255, .6)"><a href="http://dragonflysearch.com/<?php echo $radsearch; ?>" style="color:black; text-decoration:none;">Trending</a></button>
+<button type="button" class="btn btn-default center" style="background-color: rgba(255, 255, 255, .6)"><a href="http://dragonflysearch.com/<?php echo $radsearch; ?>" style="color:black; text-decoration:none;">Recommended</a></button>
 </div></center>
 
 
