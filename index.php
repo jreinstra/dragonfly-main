@@ -95,13 +95,13 @@ img {
 
 </a>
 <form action="/search/" method="GET">
-<div class="input-group">
-<input placeholder="Research engine for students" type="text" class="form-control" style="background-color:rgba(255, 255, 255, .7)">
-
-<span class="input-group-btn">
-<a href="http://beam.la/DragonflyDesktop.html" style="text-decoration:none;"> <input type="submit" value="Fly" style=" background-color:rgba(255, 255, 255, .6)" class="btn btn-default" type="button">  </a>
-
-</span></div>
+	<div class="input-group">
+		<input name="q" placeholder="Research engine for students" type="text" class="form-control" style="background-color:rgba(255, 255, 255, .7)">
+		
+		<span class="input-group-btn">
+		<input type="submit" value="Fly" style=" background-color:rgba(255, 255, 255, .6)" class="btn btn-default" type="button">
+		</span>
+	</div>
 </form>
 <center><div class="btn-group" style="padding:5px; color:rgba(255, 255,255, .6)">
 <button type="button" class="btn btn-default" style="background-color:rgba(255, 255, 255, .6)"><a href="http://beam.la/DragonflyDesktop.html" style="color:black; text-decoration:none;">Trending</a></button>
