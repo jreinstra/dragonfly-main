@@ -19,6 +19,7 @@ foreach($result as $subject) {
 			$url = "http://en.wikipedia.org/wiki/" . $url;
 			//echo "url: " . $url . "<br>";
 			$temp = file_get_contents("http://localhost:8080/crawler/downloadOne.php?u=" . urlencode($url) . "&s=" . urlencode($subject), true) . "<br><br><br>";
+			echo "result: " . $temp . "<br><br><br>";
 		}
 		mysqli_stmt_close($stmt);
 }
