@@ -27,7 +27,7 @@ $sql = array(
 				PRIMARY KEY(factID),
 				docID int,
 				Subject varchar(200),
-				Text varchar(1000)
+				Text varchar(5000)
 			)",
 			"CREATE TABLE subjects (
 				subjectID int NOT NULL AUTO_INCREMENT,

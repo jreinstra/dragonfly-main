@@ -4,7 +4,7 @@ $q = urldecode($_GET["q"]);
 
 $subject = getSubject($q);
 
-$sql = "SELECT Text FROM facts WHERE Subject=? LIMIT 10";
+$sql = "SELECT Text FROM facts WHERE Subject=? ORDER BY PID ASC LIMIT 10";
 $stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
 	mysqli_stmt_bind_param($stmt, 's', $subject) or die(mysqli_stmt_error($stmt));
 	mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
