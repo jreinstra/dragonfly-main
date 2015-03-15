@@ -5,7 +5,7 @@ $q = $_GET["q"];
 	die();
 }*/
 
-$results = file_get_contents("http://localhost:8080/api/search.php?q=" . $q);
+$results = file_get_contents("/api/search.php?q=" . $q, true);
 $results = json_decode($results, true);
 
 $subject = $results["Subject"];
