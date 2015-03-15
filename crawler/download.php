@@ -33,7 +33,7 @@ foreach($res as $i=>$contents) {
 		mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
 		mysqli_stmt_close($stmt);
 		
-	$sql = "INSERT INTO queue_document (docID, siteID, BaseURL) VALUES (?, 1, ?)";
+	$sql = "INSERT INTO queue_document (docID, BaseURL) VALUES (?, ?)";
 	$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($stmt));
 		mysqli_stmt_bind_param($stmt, 'is', $docID, $baseUrl) or die(mysqli_stmt_error($stmt));
 		mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
