@@ -1,7 +1,7 @@
 <?php
 require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect.php");
 
-$q = $_GET["q"];
+$q = urldecode($_GET["q"]);
 $q = preg_replace("/ /", "_", $q);
 
 $result = file_get_contents("http://en.wikipedia.org/w/api.php?action=opensearch&search=" . $q . "&format=json");

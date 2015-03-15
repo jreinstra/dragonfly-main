@@ -1,6 +1,6 @@
 <?php
 require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect.php");
-$q = $_GET["q"];
+$q = urldecode($_GET["q"]);
 
 $subject = getSubject($q);
 

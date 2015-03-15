@@ -94,7 +94,7 @@ img {
 <h1 class="text-center" style="color:red;">dragonfly - <i>beta</i></h1>
 
 </a>
-<form action="./index_files/index.html">
+<form action="/search/" method="GET">
 <div class="input-group">
 <input placeholder="Research engine for students" type="text" class="form-control" style="background-color:rgba(255, 255, 255, .7)">
 
