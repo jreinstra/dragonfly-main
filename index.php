@@ -79,7 +79,7 @@ img {
         <h4 class="modal-title" id="myModalLabel" style="color:red;">Dragonfly Full Launch April 1st</h4>
       </div>
       <div class="modal-body">
-        <iframe src=".http://beam.la/modernsearchcenter.html" style="width:125%; height:650px"></iframe>
+        <iframe src="http://beam.la/modernsearchcenter.html" style="width:125%; height:650px"></iframe>
       </div>
      
     </div>
