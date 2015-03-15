@@ -79,7 +79,7 @@ img {
         <h4 class="modal-title" id="myModalLabel" style="color:red;">Dragonfly Full Launch April 1st</h4>
       </div>
       <div class="modal-body">
-        <iframe src="./index_files/modernsearchcenter.html" style="width:125%; height:650px"></iframe>
+        <iframe src=".http://beam.la/modernsearchcenter.html" style="width:125%; height:650px"></iframe>
       </div>
      
     </div>
@@ -90,7 +90,7 @@ img {
    
    
 <a href="#" style="  text-decoration:none;">
-<div class="text-center"><img class="text-center" style="padding-top:0px; padding-left:0%; width:350px; height:250px;" src="./index_files/DragonflyLogo.png"></div>
+<div class="text-center"><img class="text-center" style="padding-top:0px; padding-left:0%; width:350px; height:250px;" src="http://beam.la/DragonflyLogo.png"></div>
 <h1 class="text-center" style="color:red;">dragonfly - <i>beta</i></h1>
 
 </a>
