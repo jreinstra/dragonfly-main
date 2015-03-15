@@ -4,7 +4,7 @@ $q = $_GET["q"];
 	header("Location: /");
 	die();
 }*/
-
+$results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . $q, true);
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search.php?q=" . $q, true);
 $results = json_decode($results, true);
 
