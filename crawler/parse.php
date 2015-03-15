@@ -1,11 +1,10 @@
 <?php
-require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/lib/simplehtmldom/simple_html_dom.php");
+//require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/lib/simplehtmldom/simple_html_dom.php");
 require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect.php");
 
 $sql = "SELECT * FROM queue_document LIMIT 100";
 $result = mysqli_query($con, $sql) or die(mysqli_error($con));
 if(mysqli_num_rows($result) < 1) die();
-
 while($row = mysqli_fetch_assoc($result)) {
 	parseFileNew($_SERVER["DOCUMENT_ROOT"] . "/documents/" . $row["docID"] . ".html", $row["BaseURL"], $row["docID"]);
 	deleteFile($row["docID"]);
@@ -29,12 +28,12 @@ function parseFileNew($path, $baseUrl, $docID) {
 		logFact($text, $title, $docID);
 	}
 	
-	/*$GLOBALS["urls"] = array();
+	$GLOBALS["urls"] = array();
 	$contentParse = $content;
 	while($contentParse != null) {
 		$contentParse = parseURL($contentParse, $baseUrl);
 	}
-	logURLs($GLOBALS["urls"]);*/
+	//logURLs($GLOBALS["urls"]);
 	//echo "<pre>"; print_r($GLOBALS["urls"]); echo "</pre>";
 }
 
