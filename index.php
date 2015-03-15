@@ -89,7 +89,7 @@ img {
    <div class="col-lg-6 col-lg-offset-3">
    
    
-<a href="./index_files/index.html" style="  text-decoration:none;">
+<a href="#" style="  text-decoration:none;">
 <div class="text-center"><img class="text-center" style="padding-top:0px; padding-left:0%; width:350px; height:250px;" src="./index_files/DragonflyLogo.png"></div>
 <h1 class="text-center" style="color:red;">dragonfly - <i>beta</i></h1>
 
@@ -99,7 +99,7 @@ img {
 <input placeholder="Research engine for students" type="text" class="form-control" style="background-color:rgba(255, 255, 255, .7)">
 
 <span class="input-group-btn">
-<a href="http://beam.la/DragonflyDesktop.html" style="text-decoration:none;"> <button style=" background-color:rgba(255, 255, 255, .6)" class="btn btn-default" type="button">Fly</button>  </a>
+<a href="http://beam.la/DragonflyDesktop.html" style="text-decoration:none;"> <input type="submit" value="Fly" style=" background-color:rgba(255, 255, 255, .6)" class="btn btn-default" type="button">  </a>
 
 </span></div>
 </form>
