@@ -71,12 +71,20 @@ color:#606060 ;
 
 <a href="/" style="text-decoration:none;"><h1 class="text-center" style=" color: #D92F03; font-size: 40px;">dragonfly - <i>beta</i> </h1></a>
 
-<form action="/search/" method="GET">
+<!--<form action="/search/" method="GET">
 <div class="input-group">
  <input name="q" value="<?php echo $subject; ?>" type="text" class="form-control">
  <span style="color:#C00000; background-color:#F8F8F8 ;" class="input-group-addon"><input type="submit" value="Fly" style="color:#C00000; text-decoration:none;"></span>
 </form>
-</div>
+</div>-->
+<form action="/search/" method="GET">
+    <div class="input-group">
+      <input  name="q" value="<?php echo $subject; ?>" type="text" class="form-control" placeholder="What are you looking for?">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+</form>
 
 <!---Tabs -->
  <div role="tabpanel" style="padding:5px;">
