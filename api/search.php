@@ -16,8 +16,8 @@ while(mysqli_stmt_fetch($stmt)) {
 }
 
 $result = array("Subject"=>$subject, "Facts"=>$facts);
-echo "<pre>"; print_r($result); echo "</pre>";
-//echo json_encode($results);
+//echo "<pre>"; print_r($result); echo "</pre>";
+echo json_encode($result);
 
 
 function getSubject($q, $front = false, $back = false) {
