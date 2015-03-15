@@ -18,7 +18,7 @@ foreach($result as $subject) {
 			$url = preg_replace("/ /", "_", $url);
 			$url = "http://en.wikipedia.org/wiki/" . $url;
 			//echo "url: " . $url . "<br>";
-			$temp = file_get_contents("/crawler/downloadOne.php?u=" . urlencode($url) . "&s=" . urlencode($subject)) . "<br><br><br>";
+			$temp = file_get_contents("../crawler/downloadOne.php?u=" . urlencode($url) . "&s=" . urlencode($subject)) . "<br><br><br>";
 			echo "result: " . $temp . "<br><br><br>";
 		}
 		mysqli_stmt_close($stmt);
