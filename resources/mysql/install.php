@@ -18,7 +18,7 @@ $sql = array(
 			)",
 			"CREATE TABLE documents (
 				docID int NOT NULL AUTO_INCREMENT,
-				PRIMARY KEY(docID)
+				PRIMARY KEY(docID),
 				URL varchar(400),
 				LastCrawled bigint
 			)",
@@ -32,7 +32,8 @@ $sql = array(
 			"CREATE TABLE subjects (
 				subjectID int NOT NULL AUTO_INCREMENT,
 				PRIMARY KEY(subjectID),
-				Name varchar(255)
+				Name varchar(255),
+				Valid tinyint
 			)"
 			);
 
