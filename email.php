@@ -59,7 +59,9 @@ $headers = 'From: '.$email_from."\r\n".
 <!DOCTYPE html>
 <html lang="en">
  <head>
-
+<script>
+ alert("You're notes have been sent! Check your spam folder if you can't find them in a few minutes.");
+</script>
   <meta http-equiv="refresh" content="0; url=/search/?q=paint" />
  <script type="text/javascript">
             window.location.href = "http://dragonflysearch.com/search/?q=paint"
