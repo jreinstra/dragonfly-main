@@ -19,8 +19,8 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
 
 ?>
 <!-- saved from url=(0039)http://dragonflyapp.com/betasearch.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="http://engine.carbonads.com/z/32341/azcarbon_2_1_0_HORIZ"></script><script>
+</script>
 
  
    <meta charset="utf-8">
