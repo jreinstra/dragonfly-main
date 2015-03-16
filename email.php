@@ -60,9 +60,9 @@ $headers = 'From: '.$email_from."\r\n".
 <html lang="en">
  <head>
 
-  <meta http-equiv="refresh" content="0; url=/search/?q=<?php echo $subject; ?>" />
+  <meta http-equiv="refresh" content="0; url=/search/?q=paint" />
  <script type="text/javascript">
-            window.location.href = "http://dragonflysearch.com/search/?q=<?php echo $subject; ?>"
+            window.location.href = "http://dragonflysearch.com/search/?q=paint"
         </script>
  </head>
  
