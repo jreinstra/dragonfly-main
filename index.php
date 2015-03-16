@@ -3,7 +3,7 @@
 
   $i = rand(0, count($bg)-1); // generate random number size of the array
   $backgroundimage = "$bg[$i]"; // set variable equal to which random filename was chosen
-  $rad = array('search/?q=steve+jobs', 'search/?q=steven+colbert', 'search/?q=john+stewart', 'search/?q=apple', 'search/?q=iPhone', 'search/?q=holocaust', 'search/?q=chicken', 'search/?q=armadillo'); // array of filenames
+  $rad = array('search/?q=steve+jobs', 'search/?q=the+daily+show', 'search/?q=bill+gates', 'search/?q=elon+musk', 'search/?q=nanking+massecre', 'search/?q=redox+reaction', 'search/?q=acid+base', 'search/?q=particle+physics'); // array of filenames
 
   $n = rand(0, count($rad)-1); // generate random number size of the array
   $radsearch = "$rad[$n]"; // set variable equal to which random filename was chosen
