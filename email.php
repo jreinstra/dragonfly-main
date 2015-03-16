@@ -44,7 +44,7 @@ if(isset($_POST['email'])) {
     }
      
  
-    $email_message .= "Your Notes: ".clean_string($comments)."\n"."\n"."You have recived this message because you reqested your notes to be sent to you from dragonflysearch.com";
+    $email_message .= "Your Notes: ".clean_string($comments)."\n"."\n"."You're notes from dragonflysearch.com";
      
       $email_to = $email_from;
     $email_subject = "Your Notes";
