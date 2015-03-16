@@ -22,6 +22,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="http://engine.carbonads.com/z/32341/azcarbon_2_1_0_HORIZ"></script><script>
 </script>
 
+
  
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -113,7 +114,7 @@ $("#myModal").css("z-index", "1500");
   <div class="modal-dialog" style="width:80%; height:95%;">
     <div class="modal-content" style="height:97%;">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Ã—</span></button>
         <h4 class="modal-title text-left" id="myModalLabel">Fill out a 5 question survey</h4>
       </div>
       <div class="modal-body">
@@ -222,6 +223,7 @@ Videos coming April 1st!
 </div>
 </form>
 <!-- End Email Form -->    
+      <div id="carbonads-container"><div class="carbonad" style="width:100%;"><div id="azcarbon"></div><script>var z = document.createElement("script"); z.async = true; z.src = "http://engine.carbonads.com/z/32341/azcarbon_2_1_0_HORIZ"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
 
   </div>
 
