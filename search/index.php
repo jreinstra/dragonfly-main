@@ -104,7 +104,7 @@ color:#606060 ;
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
   Give us feedback!
 </button>
-<button type="button" class="btn btn-default" style="background-color: rgba(255, 255, 255, .6)"><a href="http://dragonflysearch.com/<?php echo $radsearch; ?>" style="color:black; text-decoration:none;">Random Search!</a></button>
+<button type="button" class="btn btn-default"><a href="http://dragonflysearch.com/<?php echo $radsearch; ?>" style="color:black; text-decoration:none;">Random Search!</a></button>
 </div>
 <script>$("#myModal").modal("show");
 $("#myModal").css("z-index", "1500");
