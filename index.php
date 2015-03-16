@@ -88,7 +88,7 @@ img {
     <div class="modal-content" style="height:600px">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <h4 class="modal-title" id="myModalLabel" style="color:red;">Dragonfly Full Launch April 1st</h4>
+        <h4 class="modal-title" id="myModalLabel" style="color:red;">Dragonfly Full Launch Within a Few Weeks</h4>
       </div>
       <div class="modal-body">
         <iframe src="http://beam.la/modernsearchcenter.html" style="width:125%; height:650px"></iframe>
