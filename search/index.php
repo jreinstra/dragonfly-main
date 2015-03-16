@@ -19,7 +19,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
 
 ?>
 <!-- saved from url=(0039)http://dragonflyapp.com/betasearch.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="http://engine.carbonads.com/z/32341/azcarbon_2_1_0_HORIZ"></script><script>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>
 </script>
 
 
@@ -114,7 +114,7 @@ $("#myModal").css("z-index", "1500");
   <div class="modal-dialog" style="width:80%; height:95%;">
     <div class="modal-content" style="height:97%;">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         <h4 class="modal-title text-left" id="myModalLabel">Fill out a 5 question survey</h4>
       </div>
       <div class="modal-body">
