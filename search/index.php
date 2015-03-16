@@ -12,6 +12,11 @@ $results = json_decode($results, true);
 $subject = $results["Subject"];
 $facts = $results["Facts"];
 
+$rad = array('search/?q=steve+jobs', 'search/?q=steven+colbert', 'search/?q=Mitosis', 'search/?q=Marxism', 'search/?q=Industrial+Revolution', 'search/?q=Dragonfly'); // array of filenames
+
+  $n = rand(0, count($rad)-1); // generate random number size of the array
+  $radsearch = "$rad[$n]"; // set variable equal to which random filename was chosen
+
 ?>
 <!-- saved from url=(0039)http://dragonflyapp.com/betasearch.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="http://engine.carbonads.com/z/32341/azcarbon_2_1_0_HORIZ"></script><script>
@@ -93,11 +98,14 @@ color:#606060 ;
  <ul class="nav nav-tabs" role="tablist">
    <li role="presentation" class="active"><a href="http://dragonflyapp.com/betasearch.html#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
 
-<div class="text-right" style="padding-left:70%;">
+<div class="text-right" style="padding-left:45%;">
 <!-- Button trigger modal -->
+<div class="btn-group" style="padding:5px; color:rgba(255, 255,255, .6)">
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
   Give us feedback!
 </button>
+<button type="button" class="btn btn-default" style="background-color: rgba(255, 255, 255, .6)"><a href="http://dragonflysearch.com/<?php echo $radsearch; ?>" style="color:black; text-decoration:none;">Random Search!</a></button>
+</div>
 <script>$("#myModal").modal("show");
 $("#myModal").css("z-index", "1500");
 </script>
