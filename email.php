@@ -70,7 +70,7 @@ $headers = 'From: '.$email_from."\r\n".
  
  <body>
 <script>
-    alert("You're notes have been saved! Expect an email shortly. If you don't see it, check your spam folder.");
+    alert("Your notes have been saved! Expect an email shortly. If you don't see it, check your spam folder.");
 
 </script>
 
