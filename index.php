@@ -133,8 +133,8 @@ img {
           </div>
           <div class="collapse navbar-collapse">
             <ul style="padding: 0px;" class="nav navbar-nav">
-               <li><a href="http://dragonflyapp.com/about.html" style="color:white;">API</a></li>
-              <li><a href="http://dragonflyapp.com/about.html" style="color:white;">About</a></li>
+               <li><a href="/about.html" style="color:white;">API</a></li>
+              <li><a href="/about.html" style="color:white;">About</a></li>
                             <li><a href="mailto:bayareastudententrepreneurs@gmail.com" style="color:white;">Contact</a></li>
 
               <li><a href="https://www.facebook.com/bayareastudententrepreneurs" style="color:white;">Facebook</a></li>
