@@ -12,7 +12,7 @@ $results = json_decode($results, true);
 $subject = $results["Subject"];
 $facts = $results["Facts"];
 
-$rad = array('search/?q=steve+jobs', 'search/?q=steven+colbert', 'search/?q=Mitosis', 'search/?q=Marxism', 'search/?q=Industrial+Revolution', 'search/?q=Dragonfly'); // array of filenames
+$rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mitosis', 'search/?q=Marxism', 'search/?q=Industrial+Revolution', 'search/?q=Dragonfly'); // array of filenames
 
   $n = rand(0, count($rad)-1); // generate random number size of the array
   $radsearch = "$rad[$n]"; // set variable equal to which random filename was chosen
