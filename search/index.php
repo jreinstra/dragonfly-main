@@ -195,7 +195,7 @@ Videos coming April 1st!
 
 
 <!-- END -->
- <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:23.6%; height:319.5px;"> <form name="contactform" method="post" action="/email.php">
+ <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:23.6%; height:290.5px;"> <form name="contactform" method="post" action="/email.php">
 <table style="width:100%; padding:4px;">
 
 <tbody><tr>
@@ -205,7 +205,6 @@ Videos coming April 1st!
 </tr>
 </tbody></table>
 
-    <p class="lead" style="color:black;padding-left:3px;">Save</p>
 
 
 <p> </p>
