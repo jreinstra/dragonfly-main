@@ -70,8 +70,10 @@ $headers = 'From: '.$email_from."\r\n".
  
  <body>
 <script>
- alert("You're notes have been sent! Check your spam folder if you can't find them in a few minutes.");
+    alert("Hello! I am an alert box!");
+
 </script>
+
  </body>
 </html>
 <?php
