@@ -195,7 +195,7 @@ Videos coming April 1st!
 
 
 <!-- END -->
- <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:23.6%; height:319.5px;"> <form name="contactform" method="post" action="http://dragonflyapp.com/email.php">
+ <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:23.6%; height:319.5px;"> <form name="contactform" method="post" action="/email.php">
 <table style="width:100%; padding:4px;">
 
 <tbody><tr>
@@ -219,7 +219,7 @@ Videos coming April 1st!
 
 <div style="padding-right:5px; padding-left:5px;">
 
-<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Submit"><a href="http://dragonflyapp.com/email.php">    </a>
+<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Submit"><a href="/email.php">    </a>
 
 </div>
 </form>
