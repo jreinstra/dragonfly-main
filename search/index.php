@@ -5,8 +5,8 @@ if(!isset($q) || strlen($q) < 1) {
 	die();
 }
 $q = strtolower($q);
-$results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . urlencode($q), true);
-$results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search.php?q=" . urlencode($q), true);
+$results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . urlencode($q));
+$results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search.php?q=" . urlencode($q));
 $results = json_decode($results, true);
 
 $subject = $results["Subject"];
