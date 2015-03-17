@@ -3,7 +3,7 @@
 
   $i = rand(0, count($bg)-1); // generate random number size of the array
   $backgroundimage = "$bg[$i]"; // set variable equal to which random filename was chosen
-  $rad = array('search/?q=steve+jobs', 'search/?q=steven+colbert', 'search/?q=john+stewart', 'search/?q=apple', 'search/?q=iPhone', 'search/?q=holocaust', 'search/?q=chicken', 'search/?q=armadillo'); // array of filenames
+  $rad = array('search/?q=steve+jobs', 'search/?q=the+daily+show', 'search/?q=bill+gates', 'search/?q=elon+musk', 'search/?q=nanking+massecre', 'search/?q=redox+reaction', 'search/?q=acid+base', 'search/?q=particle+physics'); // array of filenames
 
   $n = rand(0, count($rad)-1); // generate random number size of the array
   $radsearch = "$rad[$n]"; // set variable equal to which random filename was chosen
@@ -88,7 +88,7 @@ img {
     <div class="modal-content" style="height:600px">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <h4 class="modal-title" id="myModalLabel" style="color:red;">Dragonfly Full Launch April 1st</h4>
+        <h4 class="modal-title" id="myModalLabel" style="color:red;">Dragonfly Full Launch Within a Few Weeks</h4>
       </div>
       <div class="modal-body">
         <iframe src="http://beam.la/modernsearchcenter.html" style="width:125%; height:650px"></iframe>
@@ -133,12 +133,12 @@ img {
           </div>
           <div class="collapse navbar-collapse">
             <ul style="padding: 0px;" class="nav navbar-nav">
-               <li><a href="http://dragonflyapp.com/about.html" style="color:white;">API</a></li>
-              <li><a href="http://dragonflyapp.com/about.html" style="color:white;">About</a></li>
+               <li><a href="/about.html" TARGET="_blank" style="color:white;">API</a></li>
+              <li><a href="/about.html" TARGET="_blank" style="color:white;">About</a></li>
                             <li><a href="mailto:bayareastudententrepreneurs@gmail.com" style="color:white;">Contact</a></li>
 
-              <li><a href="https://www.facebook.com/bayareastudententrepreneurs" style="color:white;">Facebook</a></li>
-                            <li><a href="http://twitter.com/codingsf" style="color:white;">Twitter</a></li>
+              <li><a href="https://www.facebook.com/bayareastudententrepreneurs" TARGET="_blank" style="color:white;">Facebook</a></li>
+                            <li><a href="http://twitter.com/codingsf" TARGET="_blank" style="color:white;">Twitter</a></li>
 
             </ul>
           </div><!--/.nav-collapse -->
@@ -168,6 +168,15 @@ img {
  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
  <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-60786207-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
   
 <div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">         <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1426438923190">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=dragonflyapp.com%2C%2F%2Fdragonflyapp.com%2Chttp%3A%2F%2Fdragonflyapp.com">         <embed src="/assets/flash/ZeroClipboard.swf?noCache=1426438923190" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=dragonflyapp.com%2C%2F%2Fdragonflyapp.com%2Chttp%3A%2F%2Fdragonflyapp.com" scale="exactfit">                </object></div></body></html>
