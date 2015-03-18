@@ -41,6 +41,13 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
   body {
 background: url("<?php echo $backgroundimage; ?>") no-repeat;
 background-size: 100%;
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+
   }
    h1 {
   color:#FF3333;
