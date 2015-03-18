@@ -80,7 +80,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
 <?php
 	$i = 1;
 	foreach($facts as $fact) {
-		include($_SERVER["DOCUMENT_ROOT"] . "/resources/page/modules/mobilefact.php");
+		include($_SERVER["DOCUMENT_ROOT"] . "/resources/page/modules/mobilefacts.php");
 		$i++;
 	}
 ?>
