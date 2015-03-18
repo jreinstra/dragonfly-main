@@ -60,12 +60,14 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
                                    <link rel="shortcut icon" href="http://media-cache-ak0.pinimg.com/originals/52/ca/09/52ca090a26388d04dff0fed9947effbd.jpg">
 
  <body>
+  
+ <form action="/search/mobileindex.php" method="GET">
 <div style="padding:15PX;">
 <div style=" padding:3px;" class="input-group">
   <span style="color:white; background-color:#B80000 ; font-size:20px;"class="input-group-addon"><strong>D</strong></span>
 
       
-  <input value="<?php echo $subject; ?>" placeholder="What are you researching?" type="text" class="form-control" >
+  <input   name="q"  value="<?php echo $subject; ?>" placeholder="What are you researching?" type="text" class="form-control" >
  <span style="
      background-color:white;
     padding: 0px;
@@ -73,9 +75,10 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
     border-radius:0em;
     font-size: .9em;
 " class="input-group-btn">
-        <button class="btn btn-default" type="button"><a href="index.html" style="text-decoration:none; color: #D00000;">Fly</a></button>
+        <button class="btn btn-default" type="submit"><a href="index.html" style="text-decoration:none; color: #D00000;">Fly</a></button>
       </span>
 </div>
+</form>
 
 <?php
 	$i = 1;
