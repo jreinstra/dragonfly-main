@@ -1,9 +1,5 @@
 <?php
-  $bg = array('backgroundimages/bananaback1.jpg', 'backgroundimages/bananaback2.jpg', 'backgroundimages/bananaback3.jpg', 'backgroundimages/bananaback4.jpg', 'backgroundimages/bananaback5.jpg', 'backgroundimages/bananaback6.jpg', 'backgroundimages/bananaback7.jpg', 'backgroundimages/bananaback8.jpg', 'backgroundimages/bananaback10.jpg', 'backgroundimages/bananaback11.jpg', 'backgroundimages/bananaback12.jpg', 'backgroundimages/bananaback13.jpg', 'backgroundimages/bananaback14.jpg'); // array of filenames
-
-  $i = rand(0, count($bg)-1); // generate random number size of the array
-  $backgroundimage = "$bg[$i]"; // set variable equal to which random filename was chosen
-  $rad = array('search/?q=steve+jobs', 'search/?q=the+daily+show', 'search/?q=bill+gates', 'search/?q=elon+musk', 'search/?q=nanking+massecre', 'search/?q=redox+reaction', 'search/?q=acid+base', 'search/?q=particle+physics'); // array of filenames
+   $rad = array('search/mobileindex.php/?q=steve+jobs', 'search/mobileindex.php/?q=the+daily+show', 'search/mobileindex.php/?q=bill+gates', 'search/mobileindex.php/?q=elon+musk', 'search/mobileindex.php/?q=nanking+massecre', 'search/mobileindex.php/?q=redox+reaction', 'search/mobileindex.php/?q=acid+base', 'search/mobileindex.php/?q=particle+physics'); // array of filenames
 
   $n = rand(0, count($rad)-1); // generate random number size of the array
   $radsearch = "$rad[$n]"; // set variable equal to which random filename was chosen
