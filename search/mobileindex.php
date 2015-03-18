@@ -60,11 +60,19 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
                                    <link rel="shortcut icon" href="http://media-cache-ak0.pinimg.com/originals/52/ca/09/52ca090a26388d04dff0fed9947effbd.jpg">
 
  <body>
-  
- <form action="/search/mobileindex.php" method="GET">
+  <form action="/search/mobileindex.php/" method="GET">
+    <div class="input-group">
+      <span style="color:white; background-color:#B80000 ; font-size:20px;"class="input-group-addon"><strong>D</strong></span>
+      <input  name="q" value="<?php echo $subject; ?>" type="text" class="form-control" placeholder="What are you looking for?">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit" style="color: color: #D00000;">Fly</button>
+      </span>
+    </div><!-- /input-group -->
+</form>
+
+<!-- <form action="/search/mobileindex.php" method="GET">
 <div style="padding:15PX;">
 <div style=" padding:3px;" class="input-group">
-  <span style="color:white; background-color:#B80000 ; font-size:20px;"class="input-group-addon"><strong>D</strong></span>
 
       
   <input   name="q"  value="<?php echo $subject; ?>" placeholder="What are you researching?" type="text" class="form-control" >
@@ -78,7 +86,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
         <button class="btn btn-default" type="submit"><a href="index.html" style="text-decoration:none; color: #D00000;">Fly</a></button>
       </span>
 </div>
-</form>
+</form>-->
 
 <?php
 	$i = 1;
