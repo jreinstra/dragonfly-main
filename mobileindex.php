@@ -71,7 +71,7 @@ img {
   <body class="">
 <!-- Button trigger modal -->
 
-   <div class="col-lg-6 col-lg-offset-3">
+   <div style="padding-top:100px;" class="col-lg-6 col-lg-offset-3">
    
    
 <a href="#" style="  text-decoration:none;">
