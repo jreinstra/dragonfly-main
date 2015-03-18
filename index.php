@@ -9,7 +9,12 @@
   $radsearch = "$rad[$n]"; // set variable equal to which random filename was chosen
 
 ?>
-
+<script>
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) 
+{
+        window.location.assign("http://dragonflysearch.com/mobileindex.php")
+}
+</script>
 <!DOCTYPE html>
 <!-- saved from url=(0037)http://dragonflyapp.com/betahome.php# -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
