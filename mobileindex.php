@@ -82,7 +82,7 @@ img {
 <h1 class="text-center" style="color:red;">dragonfly - <i>beta</i></h1>
 
 </a>
-<form action="/search/" method="GET">
+<form action="/search/mobileindex.php/" method="GET">
 	<div class="input-group">
 		<input name="q" placeholder="Research engine for students" type="text" class="form-control" style="background-color:rgba(255, 255, 255, .7)">
 		
