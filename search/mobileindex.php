@@ -60,6 +60,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
                                    <link rel="shortcut icon" href="http://media-cache-ak0.pinimg.com/originals/52/ca/09/52ca090a26388d04dff0fed9947effbd.jpg">
 
  <body>
+ <div style="padding:15px;">
   <form action="/search/mobileindex.php/" method="GET">
     <div class="input-group">
       <span style="color:white; background-color:#B80000 ; font-size:20px;"class="input-group-addon"><strong>D</strong></span>
@@ -69,7 +70,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
       </span>
     </div><!-- /input-group -->
 </form>
-
+</div>
 <!-- <form action="/search/mobileindex.php" method="GET">
 <div style="padding:15PX;">
 <div style=" padding:3px;" class="input-group">
