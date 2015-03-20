@@ -84,7 +84,7 @@ img {
 <!-- Button trigger modal -->
 <div style="padding:10px;">
 
-<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" style="opacity:.9;">
+<button type="button" class="btn btn-default" data-toggle="modal" onClick='document.getElementById("search").src="http://beam.la/modernsearchcenter.html";' data-target="#myModal" style="opacity:.9;">
   Static Full Dragonfly
 </button>
 </div>
@@ -97,7 +97,8 @@ img {
         <h4 class="modal-title" id="myModalLabel" style="color:red;">Dragonfly Full Launch Within a Few Weeks</h4>
       </div>
       <div class="modal-body">
-        <iframe src="http://beam.la/modernsearchcenter.html" style="width:125%; height:650px"></iframe>
+        <iframe  id="search" frameborder="0" style="width:125%; height:650px"></iframe>
+        
       </div>
      
     </div>
