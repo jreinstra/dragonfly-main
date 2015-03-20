@@ -1,5 +1,33 @@
+<?php // test.php Rev:20130820_1000
+$re = '/# Split sentences on whitespace between them.
+    (?<=                # Begin positive lookbehind.
+      [.!?]             # Either an end of sentence punct,
+    | [.!?][\'"]        # or end of sentence punct and quote.
+    )                   # End positive lookbehind.
+    (?<!                # Begin negative lookbehind.
+      Mr\.              # Skip either "Mr."
+    | Mrs\.             # or "Mrs.",
+    | Ms\.              # or "Ms.",
+    | Jr\.              # or "Jr.",
+    | Dr\.              # or "Dr.",
+    | Prof\.            # or "Prof.",
+    | Sr\.              # or "Sr.",
+    | T\.V\.A\.         # or "T.V.A.",
+                        # or... (you get the idea).
+    )                   # End negative lookbehind.
+    \s+                 # Split on whitespace between sentences.
+    /ix';
+
+$text = $fact;
+
+$sentences = preg_split($re, $text, -1, PREG_SPLIT_NO_EMPTY);
+for ($i = 0; $i < count($sentences); ++$i) {
+    printf("Sentence[%d] = [%s]\n", $i + 1, $sentences[$i]);
+}
+?>
+
 <blockquote>
-  <p><b><?php echo $i; ?>.</b> <?php echo $fact; ?>
+  <p><b><?php echo $i; ?>.</b> <?php echo $sentences; ?>
                              
 
 </p> 
