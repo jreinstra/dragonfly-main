@@ -155,7 +155,6 @@ img {
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     
-  <script src="http://beam.la/npm.js"></script>
    <script src="http://beam.la/bootstrap.js"></script>
      <script src="http://beam.la/transition.js"></script>
      <script src="http://beam.la/collapse.js"></script>
