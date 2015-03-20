@@ -99,7 +99,7 @@ color:#606060 ;
 <div class="text-right" style="padding-left:45%;">
 <!-- Button trigger modal -->
 <div class="btn-group" style="padding:5px; color:rgba(255, 255,255, .6)">
-<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" onClick='document.getElementById("survey").src="https://www.surveymonkey.com/s/PJMKQVL";'>
   Give us feedback!
 </button>
 <button type="button" class="btn btn-default"><a href="http://dragonflysearch.com/<?php echo $radsearch; ?>" style="color:black; text-decoration:none;">Random Search!</a></button>
@@ -108,7 +108,7 @@ color:#606060 ;
 $("#myModal").css("z-index", "1500");
 </script>
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" =="">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" "==">
   <div class="modal-dialog" style="width:80%; height:95%;">
     <div class="modal-content" style="height:97%;">
       <div class="modal-header">
@@ -116,7 +116,7 @@ $("#myModal").css("z-index", "1500");
         <h4 class="modal-title text-left" id="myModalLabel">Fill out a 5 question survey</h4>
       </div>
       <div class="modal-body">
-        <iframe src="https://www.surveymonkey.com/s/PJMKQVL" style="text-decoration:none; width:100%; height:75%;"></iframe>
+        <iframe  id="survey" frameborder="0" style="text-decoration:none; width:100%; height:75%;"></iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
