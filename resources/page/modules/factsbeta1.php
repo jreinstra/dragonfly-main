@@ -21,10 +21,10 @@ $re = '/# Split sentences on whitespace between them.
 $text = $fact;
 
 $sentences = preg_split($re, $text, -1, PREG_SPLIT_NO_EMPTY);
-for ($i = 0; $i < count($sentences); ++$i) {
+for ($n = 0; $n < count($sentences); ++$n) {
    // printf("Sentence[%d] = [%s]\n", $i + 1, $sentences[$i]);
 }
-$sentences = $sentences[1];
+$sentences = $sentences[3];
 ?>
 
 <blockquote>
