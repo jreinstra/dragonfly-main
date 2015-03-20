@@ -17,9 +17,7 @@ $re = '/# Split sentences on whitespace between them.
     )                   # End negative lookbehind.
     \s+                 # Split on whitespace between sentences.
     /ix
-    U.S.
-    D.C.
-    CA.';
+  ';
 
 $text = $fact;
 
