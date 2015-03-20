@@ -24,7 +24,7 @@ $sentences = preg_split($re, $text, -1, PREG_SPLIT_NO_EMPTY);
 for ($n = 0; $n < count($sentences); ++$n) {
    // printf("Sentence[%d] = [%s]\n", $i + 1, $sentences[$i]);
 }
-$sentences2 = $sentences[1,3];
+$sentences = $sentences[$n-3];
 ?>
 
 <blockquote>
