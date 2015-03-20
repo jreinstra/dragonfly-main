@@ -28,7 +28,6 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="">
    <meta name="author" content="">
-   <link rel="shortcut icon" href="http://dragonflyapp.com/Test/assets/ico/favicon.png">
 
    <title><?php echo $subject; ?> - Dragonfly</title>
 
@@ -39,7 +38,6 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic">
  
 <link rel="stylesheet" href="http://dragonflyapp.com/modern.css">
-<link rel="stylesheet" href="http://chrisgrant.co/css/custom.css">
 
    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
    <!--[if lt IE 9]>
@@ -231,15 +229,7 @@ Videos coming April 1st!
    <!-- Bootstrap core JavaScript
    ================================================== -->
    <!-- Placed at the end of the document so the pages load faster -->
-   <script src="./index_files/npm.js"></script>
-   <script src="./index_files/bootstrap.js"></script>
-     <script src="./index_files/transition.js"></script>
-     <script src="./index_files/collapse.js"></script>
-
-<script src="./index_files/jquery.min.js"></script>
- <script src="./index_files/bootstrap.min.js"></script>
- <script src="./index_files/docs.min.js"></script>
- 
+  
   <script src="http://beam.la/npm.js"></script>
    <script src="http://beam.la/bootstrap.js"></script>
      <script src="http://beam.la/transition.js"></script>
