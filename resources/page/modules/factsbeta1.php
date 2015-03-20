@@ -22,12 +22,14 @@ $text = $fact;
 
 $sentences = preg_split($re, $text, -1, PREG_SPLIT_NO_EMPTY);
 for ($i = 0; $i < count($sentences); ++$i) {
-    printf("Sentence[%d] = [%s]\n", $i + 1, $sentences[$i]);
+   // printf("Sentence[%d] = [%s]\n", $i + 1, $sentences[$i]);
 }
+$sentences2 = (array_chunk($sentences, $sentences.length, true));
+$finalfact = array_merge($sentences2, $fact);
 ?>
 
 <blockquote>
-  <p><b><?php echo $i; ?>.</b> <?php echo $sentences; ?>
+  <p><b><?php echo $i; ?>.</b> <?php echo $finalfact; ?>
                              
 
 </p> 
