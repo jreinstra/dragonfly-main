@@ -22,7 +22,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="http://dragonflyapp.com/Test/assets/ico/favicon.png">
 
     <title>dragonfly</title>
 
@@ -35,8 +34,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Custom styles for this template -->
-    <link href="http://dragonflyapp.com/Test/dist/css/carousel.css" rel="stylesheet">
   <style>
   body {
 background: url("<?php echo $backgroundimage; ?>") no-repeat;
@@ -157,15 +154,7 @@ img {
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-       <script src="./index_files/npm.js"></script>
-   <script src="./index_files/bootstrap.js"></script>
-     <script src="./index_files/transition.js"></script>
-     <script src="./index_files/collapse.js"></script>
-
-<script src="./index_files/jquery.min.js"></script>
- <script src="./index_files/bootstrap.min.js"></script>
- <script src="./index_files/docs.min.js"></script>
-
+    
   <script src="http://beam.la/npm.js"></script>
    <script src="http://beam.la/bootstrap.js"></script>
      <script src="http://beam.la/transition.js"></script>
