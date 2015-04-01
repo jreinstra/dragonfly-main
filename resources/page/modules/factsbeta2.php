@@ -33,12 +33,12 @@ var sentences = splitSentences(text);
 
 var ol = document.getElementById("result");
 ol.innerHTML = sentences[0];
-for(var i = 0; i < 2; i++) {
-    var li = document.createElement("li");
-     li.appendChild(document.createTextNode(sentences[i]));
-    ol.appendChild(li);
-    console.log(sentences[i]);
-}
+//for(var i = 0; i < 2; i++) {
+//    var li = document.createElement("li");
+//     li.appendChild(document.createTextNode(sentences[i]));
+//    ol.appendChild(li);
+//    console.log(sentences[i]);
+//}
 
     
 </script>
