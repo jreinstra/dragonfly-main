@@ -32,13 +32,14 @@ var sentences = splitSentences(text);
 //<?php echo $fact; ?> = sentences;
 
 var ol = document.getElementById("result");
-ol.innerHTML = sentences[0];
-//for(var i = 0; i < 2; i++) {
+for(var i = 0; i < 2; i++) {
+ol.innerHTML = sentences[i];
+
 //    var li = document.createElement("li");
 //     li.appendChild(document.createTextNode(sentences[i]));
 //    ol.appendChild(li);
 //    console.log(sentences[i]);
-//}
+}
 
     
 </script>
