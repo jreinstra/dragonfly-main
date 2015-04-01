@@ -33,7 +33,7 @@ var sentences = splitSentences(text);
 
 var ol = document.getElementById("result");
 for(var i = 0; i < 2; i++) {
-ol.innerHTML = sentences[i];
+ol.innerHTML = sentences[0,i];
 
 //    var li = document.createElement("li");
 //     li.appendChild(document.createTextNode(sentences[i]));
