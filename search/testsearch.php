@@ -142,7 +142,7 @@ $("#myModal").css("z-index", "1500");
 <?php
 	$i = 1;
 	foreach($facts as $fact) {
-		include($_SERVER["DOCUMENT_ROOT"] . "/resources/page/modules/factsbeta1.php");
+		include($_SERVER["DOCUMENT_ROOT"] . "/resources/page/modules/factsbeta2.php");
 		$i++;
 	}
 ?>
