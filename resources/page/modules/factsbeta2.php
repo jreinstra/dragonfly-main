@@ -36,7 +36,7 @@ for(var i = 0; i < 2; i++) {
 //ol.innerHTML = sentences[i];
 
 
-    var li = document.createElement("li");
+    var li = document.createElement("p");
      li.appendChild(document.createTextNode(sentences[i]));
     ol.appendChild(li);
     console.log(sentences[i]);
