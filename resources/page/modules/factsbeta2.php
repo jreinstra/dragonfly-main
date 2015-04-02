@@ -33,21 +33,19 @@ var sentences = splitSentences(text);
 
 var ol = document.getElementById("result");
 for(var i = 0; i < 2; i++) {
-ol.innerHTML = sentences[0,i];
-<?php 
-$fact = "<p id="result"> </p>";
-?>
+//ol.innerHTML = sentences[i];
 
-//    var li = document.createElement("li");
-//     li.appendChild(document.createTextNode(sentences[i]));
-//    ol.appendChild(li);
-//    console.log(sentences[i]);
+
+    var li = document.createElement("li");
+     li.appendChild(document.createTextNode(sentences[i]));
+    ol.appendChild(li);
+    console.log(sentences[i]);
 }
 
     
 </script>
 <blockquote>
-  <p id="result"><b><?php echo $i; ?>.</b> <?php echo $fact; ?>
+  <p id="result"><b><?php echo $i; ?> .</b>
                              
 
 </p> 
