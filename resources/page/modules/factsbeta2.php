@@ -1,6 +1,4 @@
-
-<blockquote>
-  <p><b><?php echo $i; ?> .</b><script>
+<script>
 var splitSentences = function(text) {
     //var messy = text.split(/((?:\S[^\.\?\!]*)[\.\?\!]*)/g);
     var messy = text.match(/\(?[^\.\?\!]+[\.!\?]\)?/g);
@@ -46,6 +44,12 @@ ol.innerHTML = sentences[i];
 
     
 </script>
+
+<?php 
+$sentence = preg_split('/\(?[^\.\?\!]+[\.!\?]\)?/g',$fact);
+?>
+<blockquote>
+  <p><b><?php echo $i; ?> .</b><?php echo $sentence; ?>
                              
 
 </p> 
