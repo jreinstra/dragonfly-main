@@ -45,7 +45,7 @@ for(var i = 0; i < sentences.length; i++) {
     
 </script>
 <blockquote>
-  <p><b><?php echo $i; ?> .</b><script>console.log(sentences[i])</script>
+  <p><b><?php echo $i; ?> .</b><script>ol.innerHTML = sentences[i];</script>
                              
 
 </p> 
