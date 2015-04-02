@@ -32,7 +32,7 @@ var sentences = splitSentences(text);
 //<?php echo $fact; ?> = sentences;
 
 var ol = document.getElementById("result");
-for(var i = 0; i < 2; i++) {
+for(var i = 0; i < 5; i++) {
 //ol.innerHTML = sentences[i];
 
 
@@ -45,7 +45,7 @@ for(var i = 0; i < 2; i++) {
     
 </script>
 <blockquote>
-  <p id="result"><b><?php echo $i; ?> .</b>
+  <p id="result"><b><?php echo $i; ?> .</b><script>console.log(sentences[i])</script>
                              
 
 </p> 
