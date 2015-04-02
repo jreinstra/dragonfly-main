@@ -1,4 +1,6 @@
-<script>
+
+<blockquote>
+  <p><b><?php echo $i; ?> .</b><script>
 var splitSentences = function(text) {
     //var messy = text.split(/((?:\S[^\.\?\!]*)[\.\?\!]*)/g);
     var messy = text.match(/\(?[^\.\?\!]+[\.!\?]\)?/g);
@@ -33,7 +35,7 @@ var sentences = splitSentences(text);
 
 var ol = document.getElementById("result");
 for(var i = 0; i < sentences.length; i++) {
-//ol.innerHTML = sentences[i];
+ol.innerHTML = sentences[i];
 
 
     var li = document.createElement("p");
@@ -44,8 +46,6 @@ for(var i = 0; i < sentences.length; i++) {
 
     
 </script>
-<blockquote>
-  <p><b><?php echo $i; ?> .</b><script>ol.innerHTML = sentences[i];</script>
                              
 
 </p> 
