@@ -75,7 +75,7 @@ img {
    
    
 <a href="#" style="  text-decoration:none;">
-<h1 class="text-center" style="color:red;">dragonfly - <i>beta</i></h1>
+<h2 class="text-center" style="color:#FF3300 ;">dragonfly - <i>beta</i></h2>
 
 </a>
 <form action="/search/mobileindex.php/" method="GET">
