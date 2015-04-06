@@ -79,7 +79,7 @@ img {
 
 </a>
 <form action="/search/mobileindex.php/" method="GET">
-	<div class="input-group">
+	<div class="input-group" style="padding:10px;">
 		<input name="q" placeholder="Research engine for students" type="text" class="form-control" style="background-color:rgba(255, 255, 255, .7)">
 		
 		<span class="input-group-btn">
