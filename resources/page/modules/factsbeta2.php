@@ -49,7 +49,7 @@ ol.innerHTML = sentences[i];
 $sentence = preg_split('/\(?[^\.\?\!]+[\.!\?]\)?/g',$fact);
 ?>
 <blockquote>
-  <p><b><?php echo $i; ?> .</b><?php echo $sentence; ?>
+  <p style="color:#383838"><b><?php echo $i; ?> .</b><?php echo $fact; ?>
                              
 
 </p> 
