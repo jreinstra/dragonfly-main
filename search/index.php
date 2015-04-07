@@ -32,7 +32,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <title><?php echo $subject; ?> - Dragonfly</title>
 
    <!-- Bootstrap core CSS -->
-   <link href="http://beam.la/bootstrap.css" rel="stylesheet">
+   <link href="http://dragonflysearch.com/indexhome.css" rel="stylesheet">
        <link href="http://beam.la/glyphicons-halflings-regular.svg">
 
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic">
