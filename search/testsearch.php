@@ -115,7 +115,7 @@ $("#myModal").css("z-index", "1500");
     <div class="modal-content" style="height:97%;">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <h4 class="modal-title text-left" id="myModalLabel">Fill out a 5 question survey</h4>
+        <h4 class="modal-title text-left" id="myModalLabel">Tell Us What You Think!</h4>
       </div>
       <div class="modal-body">
         <iframe src="https://www.surveymonkey.com/s/PJMKQVL" style="text-decoration:none; width:100%; height:75%;"></iframe>
@@ -156,13 +156,13 @@ $("#myModal").css("z-index", "1500");
    <h1 style="color:#330099">Images </h1>
 <hr class="featurette-divider">
 
-Images coming April 1st! 
+Images coming April 20th! 
 
    </div>
    <div role="tabpanel" class="tab-pane" id="messages">
        <h1 style="color:#33CCFF">Videos </h1>
 <hr class="featurette-divider">
-Videos coming April 1st! 
+Videos coming April 20th! 
 
    </div>
    <div role="tabpanel" class="tab-pane" id="settings">Not sure how I'm going to do this yet. </div>
@@ -195,12 +195,12 @@ Videos coming April 1st!
 
 
 <!-- END -->
- <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:23.6%; height:290.5px;"> <form name="contactform" method="post" action="/email.php">
+ <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:30%; height:290.5px;"> <form name="contactform" method="post" action="/email.php">
 <table style="width:100%; padding:4px;">
 
 <tbody><tr>
 <td valign="top" style="padding:5px;">
-<textarea class="form-control" rows="7" placeholder="Notes" name="comments" maxlength="10000" cols="15"></textarea>
+<textarea class="form-control" rows="10" placeholder="Notes" name="comments" maxlength="10000" cols="15"></textarea>
 </td>
 </tr>
 </tbody></table>
