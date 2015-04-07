@@ -40,13 +40,13 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
         <script type="text/javascript">
 			$(function(){
 
-    $('#searchBox').autocomplete([	
+    $('#searchBox').autocomplete(	
     
   <?php  $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . urlencode($q));
   echo $results;
 ?>
     
-], {
+, {
         width:223,
         max: 10
     });
