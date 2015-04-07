@@ -26,7 +26,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
     <title>dragonfly</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="http://beam.la/bootstrap.css" rel="stylesheet">
+    <link href="http://dragonflysearch.com/indexhome.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
