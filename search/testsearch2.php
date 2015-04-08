@@ -7,6 +7,7 @@ if(!isset($q) || strlen($q) < 1) {
 $q = strtolower($q);
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . urlencode($q));
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search.php?q=" . urlencode($q));
+$searchname = urlencode($q);
 $results = json_decode($results, true);
 
 $subject = $results["Subject"];
@@ -29,7 +30,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <meta name="description" content="">
    <meta name="author" content="">
 
-   <title><?php echo $subject; ?> - Dragonfly</title>
+   <title><?php echo $searchname; ?> - Dragonfly</title>
 
    <!-- Bootstrap core CSS -->
    <link href="http://beam.la/bootstrap.css" rel="stylesheet">
@@ -76,7 +77,7 @@ color:#606060 ;
 
 <!--<form action="/search/" method="GET">
 <div class="input-group">
- <input name="q" value="<?php echo $subject; ?>" type="text" class="form-control">
+ <input name="q" value="<?php echo $searchname; ?>" type="text" class="form-control">
  <span style="color:#C00000; background-color:#F8F8F8 ;" class="input-group-addon"><input type="submit" value="Fly" style="color:#C00000; text-decoration:none;"></span>
 </form>
 </div>-->
