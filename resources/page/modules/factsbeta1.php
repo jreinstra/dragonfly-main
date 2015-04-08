@@ -48,7 +48,7 @@ for ($n = 0; $n < count($sentences); ++$n) {
     <div class="modal-content" style="height:95%;">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <h4 class="modal-title text-left" id="myModalLabel">en.wikipedia.org/<?php echo $subject; data-toggle="modal" data-target="#myModal2"  onClick='document.getElementById("<?php echo $i; ?>").src="http://en.wikipedia.org/wiki/<?php echo $subject; ?>";'> ?></h4>
+        <h4 class="modal-title text-left" id="myModalLabel">en.wikipedia.org/<?php echo $subject; ?></h4>
       </div>
       <div class="modal-body">
         <iframe  id="<?php echo $i; ?>" frameborder="0"  style="text-decoration:none; width:100%; height:75%;"></iframe>
