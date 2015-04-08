@@ -134,7 +134,7 @@ $("#myModal").css("z-index", "1500");
    <div role="tabpanel" class="tab-pane active" id="home">
 
    <!-- FACTS SECTION START -->
-<h1 style="color: 47A2B2"><?php echo $subject; ?> </h1>
+<h1 style="color: 47A2B2"><?php echo $searchname; ?> </h1>
 <p>
 </p><hr class="featurette-divider">
 
