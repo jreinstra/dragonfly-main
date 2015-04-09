@@ -210,14 +210,14 @@ Videos coming April 1st!
 <div style="padding-right:5px; padding-left:5px;">
 
 
-<input style="padding:10px;" class="form-control" id="exampleInputEmail" placeholder="Email" type="text" name="email" maxlength="80" size="30">
+<input style="padding:5px;" class="form-control" id="exampleInputEmail" placeholder="Email" type="text" name="email" maxlength="80" size="30">
 
 </div>
 <p> </p>
 
 <div style="padding-right:5px; padding-left:5px;">
 
-<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/email.php">    </a>
+<input style="padding:5px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/email.php">    </a>
 
 </div>
 </form>
