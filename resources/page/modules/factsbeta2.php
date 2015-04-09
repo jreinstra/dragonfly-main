@@ -72,7 +72,6 @@ $sentence = preg_split('/\(?[^\.\?\!]+[\.!\?]\)?/g',$fact);
         <iframe  id="<?php echo $i; ?>" frameborder="0"  style="text-decoration:none; width:100%; height:75%;"></iframe>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
