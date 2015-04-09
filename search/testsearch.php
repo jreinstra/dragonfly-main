@@ -216,7 +216,7 @@ Videos coming April 20th!
 </div>
 <p> </p>
 
-<div style="padding-right:5px; padding-left:150px;">
+<div style="width:200px; padding-right:5px; padding-left:5px;">
 
 <input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/email.php">    </a>
 
