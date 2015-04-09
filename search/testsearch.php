@@ -111,7 +111,9 @@ color:#606060 ;
 <script>$("#myModal").modal("show");
 $("#myModal").css("z-index", "1500");
 </script>
-<!-- Modal -->
+
+<!--Start Feedback Modal-->
+
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" =="">
   <div class="modal-dialog" style="width:80%; height:95%;">
     <div class="modal-content" style="height:97%;">
@@ -123,7 +125,6 @@ $("#myModal").css("z-index", "1500");
         <iframe src="https://www.surveymonkey.com/s/PJMKQVL" style="text-decoration:none; width:100%; height:75%;"></iframe>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -131,6 +132,8 @@ $("#myModal").css("z-index", "1500");
 </div>
 
  </ul>
+ 
+ <!--End of Feeback Modal-->
 
  <!-- Tab panes -->
  
