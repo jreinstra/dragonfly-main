@@ -99,7 +99,9 @@ color:#606060 ;
    <li role="presentation" class="active"><a href="http://dragonflyapp.com/betasearch.html#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
 
 <div class="text-right" style="padding-left:45%;">
+
 <!-- Button trigger modal -->
+
 <div class="btn-group" style="padding:5px; color:rgba(255, 255,255, .6)">
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
   Give us feedback!
@@ -131,10 +133,12 @@ $("#myModal").css("z-index", "1500");
  </ul>
 
  <!-- Tab panes -->
+ 
  <div class="tab-content">
    <div role="tabpanel" class="tab-pane active" id="home">
 
    <!-- FACTS SECTION START -->
+   
 <h1 style="color: 47A2B2"><?php echo $subject; ?> </h1>
 <p>
 </p><hr class="featurette-divider">
@@ -146,6 +150,7 @@ $("#myModal").css("z-index", "1500");
 		$i++;
 	}
 ?>
+
    <!-- FACTS SECTION END -->
 <!-- FACTS CONTINUE INFINITELY -->
 
@@ -169,6 +174,7 @@ Videos coming April 20th!
  </div>
 
 </div>
+
  <!-- End of tabs -->
 
    </div>
@@ -187,14 +193,10 @@ Videos coming April 20th!
 
  <div style="padding-top:90px;" class="col-xs-6 col-sm-3">  
 
- <!--- START -->
-
- 
-
-
-
-
 <!-- END -->
+
+<!--START NOTES AND EMAIL FORM-->
+
  <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:30%; height:350px;"> <form name="contactform" method="post" action="/email.php">
 <table style="width:100%; padding:4px;">
 
@@ -222,7 +224,8 @@ Videos coming April 20th!
 
 </div>
 </form>
-<!-- End Email Form -->    
+
+<!-- END NOTES AND EMAIL FORM -->    
 
   </div>
 
