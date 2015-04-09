@@ -69,7 +69,7 @@ $sentence = preg_split('/\(?[^\.\?\!]+[\.!\?]\)?/g',$fact);
         <h4 class="modal-title text-left" id="myModalLabel">en.wikipedia.org/<?php echo $subject; ?></h4>
       </div>
       <div class="modal-body">
-        <iframe align="left" id="<?php echo $i; ?>" frameborder="0"  style="text-decoration:none; width:100%; height:75%;"></iframe>
+        <iframe id="<?php echo $i; ?>" frameborder="0"  align="left" style="text-decoration:none; width:100%; height:75%;"></iframe>
       </div>
       <div class="modal-footer">
       </div>
