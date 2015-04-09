@@ -62,14 +62,14 @@ $sentence = preg_split('/\(?[^\.\?\!]+[\.!\?]\)?/g',$fact);
 
 <!-- Modal -->
 <div align="left" class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" "==" style="display: none;">
-  <div class="modal-dialog" style="width:80%; height:93%;">
+  <div class="modal-dialog" style="width:80%; height:93%;" align="left">
     <div class="modal-content" style="height:95%;">
       <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         <h4 class="modal-title text-left" id="myModalLabel">en.wikipedia.org/<?php echo $subject; ?></h4>
       </div>
       <div class="modal-body">
-        <iframe id="<?php echo $i; ?>" frameborder="0"  align="left" style="text-decoration:none; width:100%; height:75%;"></iframe>
+        <iframe id="<?php echo $i; ?>" frameborder="0" style="text-decoration:none; width:100%; height:75%;"></iframe>
       </div>
       <div class="modal-footer">
       </div>
