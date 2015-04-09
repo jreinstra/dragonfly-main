@@ -126,7 +126,7 @@ $("#myModal").css("z-index", "1500");
         <h4 class="modal-title text-left" id="myModalLabel">Tell Us What You Think!</h4>
       </div>
       <div class="modal-body">
-        <iframe src="https://www.surveymonkey.com/s/PJMKQVL" style="text-decoration:none; width:100%; height:100%;"></iframe>
+        <iframe src="https://www.surveymonkey.com/s/PJMKQVL" style="text-decoration:none; width:100%; height:75%;"></iframe>
       </div>
       <div class="modal-footer">
       </div>
