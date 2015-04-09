@@ -65,7 +65,6 @@ $sentence = preg_split('/\(?[^\.\?\!]+[\.!\?]\)?/g',$fact);
   <div class="modal-dialog" style="width:80%; height:93%;">
     <div class="modal-content" style="height:95%;">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         <h4 class="modal-title text-left" id="myModalLabel">en.wikipedia.org/<?php echo $subject; ?></h4>
       </div>
       <div class="modal-body">
