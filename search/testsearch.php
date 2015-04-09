@@ -120,13 +120,13 @@ $("#myModal").css("z-index", "1500");
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" =="">
   <div class="modal-dialog" style="width:80%; height:95%;">
-    <div class="modal-content" style="height:100%;">
+    <div class="modal-content" style="height:97%;">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         <h4 class="modal-title text-left" id="myModalLabel">Tell Us What You Think!</h4>
       </div>
       <div class="modal-body">
-        <iframe src="https://www.surveymonkey.com/s/PJMKQVL" style="text-decoration:none; width:100%; height:75%;"></iframe>
+        <iframe src="https://www.surveymonkey.com/s/PJMKQVL" style="text-decoration:none; width:100%; height:100%;"></iframe>
       </div>
       <div class="modal-footer">
       </div>
