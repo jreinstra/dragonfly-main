@@ -60,7 +60,7 @@ $sentence = preg_split('/\(?[^\.\?\!]+[\.!\?]\)?/g',$fact);
  <!-- Large modal -->
 
 
-<!-- Modal -->
+<!-- Start Fact Source Modal -->
 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" "==" style="display: none;" align="left">
   <div class="modal-dialog" style="width:80%; height:93%;" align="left">
     <div class="modal-content" style="height:95%;">
@@ -70,6 +70,33 @@ $sentence = preg_split('/\(?[^\.\?\!]+[\.!\?]\)?/g',$fact);
       </div>
       <div class="modal-body">
         <iframe id="<?php echo $i; ?>" frameborder="0" style="text-decoration:none; width:100%; height:75%;"></iframe>
+        <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:30%; height:350px;"> <form name="contactform" method="post" action="/email.php">
+<table style="width:100%; padding:4px;">
+
+<tbody><tr>
+<td valign="top" style="padding:5px;">
+<textarea class="form-control" rows="10" placeholder="Notes" name="comments" maxlength="10000" cols="15"></textarea>
+</td>
+</tr>
+</tbody></table>
+
+
+
+<p> </p>
+<div style="padding-right:5px; padding-left:5px;">
+
+
+<input style="padding:10px;" class="form-control" id="exampleInputEmail" placeholder="Email" type="text" name="email" maxlength="80" size="30">
+
+</div>
+<p> </p>
+
+<div style="width:200px; padding-right:5px; padding-left:5px;">
+
+<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/email.php">    </a>
+
+</div>
+</form>
       </div>
       <div class="modal-footer">
       </div>
@@ -77,6 +104,7 @@ $sentence = preg_split('/\(?[^\.\?\!]+[\.!\?]\)?/g',$fact);
   </div>
 </div>
 
+ <!--End Fact Sourcce Modal-->
 
  
  
