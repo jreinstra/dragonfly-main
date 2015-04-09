@@ -195,7 +195,7 @@ Videos coming April 20th!
 
 
 <!-- END -->
- <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:30%; height:290.5px;"> <form name="contactform" method="post" action="/email.php">
+ <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:30%; height:330px;"> <form name="contactform" method="post" action="/email.php">
 <table style="width:100%; padding:4px;">
 
 <tbody><tr>
