@@ -61,7 +61,7 @@ $sentence = preg_split('/\(?[^\.\?\!]+[\.!\?]\)?/g',$fact);
 
 
 <!-- Modal -->
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" "==" style="display: none;">
+<div align="left" class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" "==" style="display: none;">
   <div class="modal-dialog" style="width:80%; height:93%;">
     <div class="modal-content" style="height:95%;">
       <div class="modal-header">
