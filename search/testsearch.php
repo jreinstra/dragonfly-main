@@ -92,15 +92,17 @@ color:#606060 ;
 </form>
 
 <!---Tabs -->
+
  <div role="tabpanel" style="padding:5px;">
 
  <!-- Nav tabs -->
+ 
  <ul class="nav nav-tabs" role="tablist">
    <li role="presentation" class="active"><a href="http://dragonflyapp.com/betasearch.html#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
 
 <div class="text-right" style="padding-left:45%;">
 
-<!-- Button trigger modal -->
+<!--Start Random Search Modal-->
 
 <div class="btn-group" style="padding:5px; color:rgba(255, 255,255, .6)">
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
@@ -112,11 +114,13 @@ color:#606060 ;
 $("#myModal").css("z-index", "1500");
 </script>
 
+<!--End Random Search Modal-->
+
 <!--Start Feedback Modal-->
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" =="">
   <div class="modal-dialog" style="width:80%; height:95%;">
-    <div class="modal-content" style="height:97%;">
+    <div class="modal-content" style="height:100%;">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         <h4 class="modal-title text-left" id="myModalLabel">Tell Us What You Think!</h4>
