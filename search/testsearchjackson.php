@@ -7,7 +7,6 @@ if(!isset($q) || strlen($q) < 1) {
 $q = strtolower($q);
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . urlencode($q));
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search.php?q=" . urlencode($q));
-$searchname = urlencode($q);
 $results = json_decode($results, true);
 
 $subject = $results["Subject"];
@@ -30,10 +29,10 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <meta name="description" content="">
    <meta name="author" content="">
 
-   <title><?php echo $searchname; ?> - Dragonfly</title>
+   <title><?php echo $subject; ?> - Dragonfly</title>
 
    <!-- Bootstrap core CSS -->
-   <link href="http://beam.la/bootstrap.css" rel="stylesheet">
+   <link href="http://dragonflysearch.com/indexhome.css" rel="stylesheet">
        <link href="http://beam.la/glyphicons-halflings-regular.svg">
 
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic">
@@ -70,20 +69,20 @@ color:#606060 ;
 
  
  <body class="">
- <div style="padding-left:10%">
+
   <div class="col-xs-10 col-sm-6 col-md-7">
 
 <a href="/" style="text-decoration:none;"><h1 class="text-center" style=" color: #D92F03; font-size: 40px;">dragonfly - <i>beta</i> </h1></a>
 
 <!--<form action="/search/" method="GET">
 <div class="input-group">
- <input name="q" value="<?php echo $searchname; ?>" type="text" class="form-control">
+ <input name="q" value="<?php echo $subject; ?>" type="text" class="form-control">
  <span style="color:#C00000; background-color:#F8F8F8 ;" class="input-group-addon"><input type="submit" value="Fly" style="color:#C00000; text-decoration:none;"></span>
 </form>
 </div>-->
 <form action="/search/" method="GET">
     <div class="input-group">
-      <input  name="q" value="<?php echo $searchname; ?>" type="text" class="form-control" placeholder="What are you looking for?">
+      <input  name="q" value="<?php echo $subject; ?>" type="text" class="form-control" placeholder="What are you looking for?">
       <span class="input-group-btn">
         <button class="btn btn-default" type="submit">Fly</button>
       </span>
@@ -134,7 +133,7 @@ $("#myModal").css("z-index", "1500");
    <div role="tabpanel" class="tab-pane active" id="home">
 
    <!-- FACTS SECTION START -->
-<h1 style="color: 47A2B2"><?php echo $searchname; ?> </h1>
+<h1 style="color: 47A2B2"><?php echo $subject; ?> </h1>
 <p>
 </p><hr class="featurette-divider">
 
@@ -210,14 +209,14 @@ Videos coming April 1st!
 <div style="padding-right:5px; padding-left:5px;">
 
 
-<input style="padding:5px;" class="form-control" id="exampleInputEmail" placeholder="Email" type="text" name="email" maxlength="80" size="30">
+<input style="padding:10px;" class="form-control" id="exampleInputEmail" placeholder="Email" type="text" name="email" maxlength="80" size="30">
 
 </div>
 <p> </p>
 
 <div style="padding-right:5px; padding-left:5px;">
 
-<input style="padding:5px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/email.php">    </a>
+<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/email.php">    </a>
 
 </div>
 </form>
@@ -254,4 +253,4 @@ Videos coming April 1st!
 </script>
 
  
-</div><div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">         <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1426438929368">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=dragonflyapp.com%2C%2F%2Fdragonflyapp.com%2Chttp%3A%2F%2Fdragonflyapp.com">         <embed src="/assets/flash/ZeroClipboard.swf?noCache=1426438929368" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=dragonflyapp.com%2C%2F%2Fdragonflyapp.com%2Chttp%3A%2F%2Fdragonflyapp.com" scale="exactfit">                </object></div> </div> </body> </html>
+</div><div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">         <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1426438929368">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=dragonflyapp.com%2C%2F%2Fdragonflyapp.com%2Chttp%3A%2F%2Fdragonflyapp.com">         <embed src="/assets/flash/ZeroClipboard.swf?noCache=1426438929368" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=dragonflyapp.com%2C%2F%2Fdragonflyapp.com%2Chttp%3A%2F%2Fdragonflyapp.com" scale="exactfit">                </object></div></body></html>
