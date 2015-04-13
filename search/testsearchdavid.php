@@ -8,6 +8,7 @@ $q = strtolower($q);
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . urlencode($q));
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search.php?q=" . urlencode($q));
 $results = json_decode($results, true);
+$searchname = urlencode($q);
 
 $subject = $results["Subject"];
 $facts = $results["Facts"];
@@ -29,7 +30,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <meta name="description" content="">
    <meta name="author" content="">
 
-   <title><?php echo $subject; ?> - Dragonfly</title>
+   <title><?php echo $searchname; ?> - Dragonfly</title>
 
    <!-- Bootstrap core CSS -->
    <link href="http://dragonflysearch.com/indexhome.css" rel="stylesheet">
