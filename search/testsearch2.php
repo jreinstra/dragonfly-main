@@ -197,12 +197,12 @@ Videos coming April 1st!
 
 
 <!-- END -->
- <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:23.6%; height:290.5px;"> <form name="contactform" method="post" action="/email.php">
+ <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:30%; height:350px;"> <form name="contactform" method="post" action="/email.php">
 <table style="width:100%; padding:4px;">
 
 <tbody><tr>
 <td valign="top" style="padding:5px;">
-<textarea class="form-control" rows="7" placeholder="Notes" name="comments" maxlength="10000" cols="15"></textarea>
+<textarea class="form-control" rows="10" placeholder="Notes" name="comments" maxlength="10000" cols="15"></textarea>
 </td>
 </tr>
 </tbody></table>
@@ -213,17 +213,20 @@ Videos coming April 1st!
 <div style="padding-right:5px; padding-left:5px;">
 
 
-<input style="padding:5px;" class="form-control" id="exampleInputEmail" placeholder="Email" type="text" name="email" maxlength="80" size="30">
+<input style="padding:10px;" class="form-control" id="exampleInputEmail" placeholder="Email" type="text" name="email" maxlength="80" size="30">
 
 </div>
 <p> </p>
 
-<div style="padding-right:5px; padding-left:5px;">
+<div style="width:200px; padding-right:5px; padding-left:5px;">
 
-<input style="padding:5px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/email.php">    </a>
+<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/email.php">    </a>
 
 </div>
 </form>
+
+<!-- END NOTES AND EMAIL FORM -->    
+
 <!-- End Email Form -->    
 
   </div>
