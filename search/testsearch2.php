@@ -71,7 +71,7 @@ color:#606060 ;
 
  
  <body class="">
- <div style="padding-left:10%">
+ <div>
   <div class="col-xs-10 col-sm-6 col-md-7">
 
 <a href="/" style="text-decoration:none;"><h1 class="text-center" style=" color: #D92F03; font-size: 40px;">dragonfly - <i>beta</i> </h1></a>
