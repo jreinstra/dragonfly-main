@@ -106,7 +106,7 @@ color:#606060 ;
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" onClick='document.getElementById("survey").src="https://www.surveymonkey.com/s/PJMKQVL";'>
   Give us feedback!
 </button>
-<button type="button" class="btn btn-default"><a href="http://dragonflysearch.com/<?php echo $radsearch; ?>" style="color:black; text-decoration:none;">Random Search!</a></button>
+<a href="http://dragonflysearch.com/<?php echo $radsearch; ?>" style="color:black; text-decoration:none;"><button type="button" class="btn btn-default">Random Search!</button></a>
 </div>
 <script>$("#myModal").modal("show");
 $("#myModal").css("z-index", "1500");
