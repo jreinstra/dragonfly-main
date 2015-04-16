@@ -43,7 +43,8 @@
   <script>
         //Populate voice selection dropdown
         var voicelist = responsiveVoice.getVoices();
-      var vselect = 'US English Female';
+       
+      var vselect = $("#voiceselection");
  
         $.each(voicelist, function() {
                 vselect.append($("<option />").val(this.name).text(this.name));
