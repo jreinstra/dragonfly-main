@@ -37,7 +37,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <link href="http://beam.la/bootstrap.css" rel="stylesheet">
        <link href="http://beam.la/glyphicons-halflings-regular.svg">
 <script src="http://code.jquery.com/jquery-git2.js"></script>
-         <script type="text/javascript" src="http://responsivevoice.org/responsivevoice/responsivevoice.js"></script>
+         <script type="text/javascript" src="http://dragonflysearch.com/scripts/responsivevoice.js"></script>
 
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic">
  
