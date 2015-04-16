@@ -24,12 +24,12 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
     <meta name="author" content="">
 
     <title>dragonfly</title>
-   <link href="http://harvix.com/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+   <link href="http://dragonflysearch.com/stylesheets/autocomplete.css" rel="stylesheet" type="text/css" />
         
 		<script type="text/javascript" src="http://harvix.com/jquery-1.5.2.min.js"></script>
   
     <!-- Bootstrap core CSS -->
-  <link href="http://beam.la/bootstrap.css" rel="stylesheet">
+  <link href="http://dragonflysearch.com/stylesheets/bootstrap.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
