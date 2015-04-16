@@ -8,6 +8,7 @@ $q = strtolower($q);
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . urlencode($q));
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search.php?q=" . urlencode($q));
 $searchname = urlencode($q);
+$searchname = str_replace("+"," ",$searchname);
 $results = json_decode($results, true);
 
 $subject = $results["Subject"];
