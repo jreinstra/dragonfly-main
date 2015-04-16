@@ -104,9 +104,9 @@ color:#606060 ;
 <!-- Button trigger modal -->
 <div class="btn-group" style="padding:5px; color:rgba(255, 255,255, .6)">
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" onClick='document.getElementById("survey").src="https://www.surveymonkey.com/s/PJMKQVL";'>
-  Give us feedback!
+  Feedback!
 </button>
-<button type="button" class="btn btn-default"  href="http://dragonflysearch.com/<?php echo $radsearch; ?>">Random Search!</button>
+<button  href="http://dragonflysearch.com/<?php echo $radsearch; ?>" type="button" class="btn btn-default" >Random!</button>
 </div>
 <script>$("#myModal").modal("show");
 $("#myModal").css("z-index", "1500");
