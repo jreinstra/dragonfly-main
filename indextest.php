@@ -26,7 +26,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
     <title>dragonfly</title>
    <link href="http://dragonflysearch.com/stylesheets/autocomplete.css" rel="stylesheet" type="text/css" />
         
-		<script type="text/javascript" src="http://harvix.com/jquery-1.5.2.min.js"></script>
   
     <!-- Bootstrap core CSS -->
   <link href="http://dragonflysearch.com/stylesheets/bootstrap.css" rel="stylesheet">
@@ -55855,12 +55854,12 @@ img {
     
       
 
-    <!-- Bootstrap core JavaScript
+    <!-- ALL the scripts 
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     
-  <script src="http://beam.la/bootstrap.js"></script>
-  
+  <script src="http://dragonflysearch.com/scripts/bootstrap.js"></script>
+  		<script type="text/javascript" src="http://dragonflysearch.com/scripts/jquery-1.5.2.min.js"></script>
+
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
  <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
