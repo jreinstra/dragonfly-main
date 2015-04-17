@@ -55859,6 +55859,12 @@ img {
     
   <script src="http://dragonflysearch.com/scripts/bootstrap.js"></script>
   		<script type="text/javascript" src="http://dragonflysearch.com/scripts/jquery-1.5.2.min.js"></script>
+     <script src="http://dragonflysearch.com/scripts/transition.js"></script>
+     <script src="http://dragonflysearch.com/scripts/collapse.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="http://dragonflysearch.com/scripts/bootstrap.min.js"></script>
+ <script src="http://dragonflysearch.com/scripts/docs.min.js"></script>
 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
