@@ -31,7 +31,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <meta name="description" content="">
    <meta name="author" content="">
 
-   <title><?php echo $searchname; ?> - Dragonfly</title>
+   <title><?php echo $searchname; ?> - dragonfly</title>
 
    <!-- Bootstrap core CSS -->
    <link href="http://beam.la/bootstrap.css" rel="stylesheet">
