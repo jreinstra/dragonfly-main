@@ -98,11 +98,7 @@ color:#606060 ;
 
  <!-- Nav tabs -->
  <ul class="nav nav-tabs" role="tablist">
-   <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
-   <li role="presentation" class="active"><a href="#images" aria-controls="Images" role="tab" data-toggle="tab" aria-expanded="true">Images</a></li>
-   <li role="presentation" class="active"><a href="#videos" aria-controls="Videos" role="tab" data-toggle="tab" aria-expanded="true">Videos</a></li>
-
-
+   <li role="presentation" class="active"><a href="http://dragonflyapp.com/betasearch.html#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
 
 <div class="text-right" style="padding-left:45%;">
 <!-- Button trigger modal -->
@@ -156,7 +152,7 @@ $("#myModal").css("z-index", "1500");
 <!-- FACTS CONTINUE INFINITELY -->
 
    </div>
-   <div role="tabpanel" class="tab-pane" id="images">
+   <div role="tabpanel" class="tab-pane" id="profile">
 
    <!-- START OF IMAGES -->
    <h1 style="color:#330099">Images </h1>
@@ -165,19 +161,26 @@ $("#myModal").css("z-index", "1500");
 Images coming April 1st! 
 
    </div>
-   <div role="tabpanel" class="tab-pane" id="videos">
+   <div role="tabpanel" class="tab-pane" id="messages">
        <h1 style="color:#33CCFF">Videos </h1>
 <hr class="featurette-divider">
 Videos coming April 1st! 
 
    </div>
-   
+   <div role="tabpanel" class="tab-pane" id="settings">Not sure how I'm going to do this yet. </div>
  </div>
 
-
+</div>
  <!-- End of tabs -->
 
    </div>
+ 
+
+
+   
+ 
+
+
 
 <div class="row">
  <div class="col-xs-6 col-sm-3"></div>
