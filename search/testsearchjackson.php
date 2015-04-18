@@ -99,6 +99,7 @@ color:#606060 ;
  <!-- Nav tabs -->
  <ul class="nav nav-tabs" role="tablist">
    <li role="presentation" class="active"><a href="http://dragonflyapp.com/betasearch.html#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
+   <li role="presentation" class="active"><a href="#images" aria-controls="images" role="tab" data-toggle="tab" aria-expanded="true">Images</a></li>
 
 <div class="text-right" style="padding-left:45%;">
 <!-- Button trigger modal -->
@@ -152,7 +153,7 @@ $("#myModal").css("z-index", "1500");
 <!-- FACTS CONTINUE INFINITELY -->
 
    </div>
-   <div role="tabpanel" class="tab-pane" id="profile">
+   <div role="tabpanel" class="tab-pane" id="images">
 
    <!-- START OF IMAGES -->
    <h1 style="color:#330099">Images </h1>
