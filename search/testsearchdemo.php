@@ -99,7 +99,7 @@ color:#606060 ;
  <!-- Nav tabs -->
  <ul class="nav nav-tabs" role="tablist">
    <li role="presentation" class="active"><a href="http://dragonflyapp.com/betasearch.html#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
-   <li role="presentation" class="active"><a href="#" aria-controls="Books" role="tab" data-toggle="tab" aria-expanded="true">Books</a></li>
+   <li role="presentation" class="active"><a href="#" aria-controls="Images" role="tab" data-toggle="tab" aria-expanded="true">Images</a></li>
    <li role="presentation" class="active"><a href="#" aria-controls="Articles" role="tab" data-toggle="tab" aria-expanded="true">Scholarly Articles</a></li>
 
 
@@ -156,7 +156,7 @@ $("#myModal").css("z-index", "1500");
 <!-- FACTS CONTINUE INFINITELY -->
 
    </div>
-   <div role="tabpanel" class="tab-pane" id="profile">
+   <div role="tabpanel" class="tab-pane" id="Images">
 
    <!-- START OF IMAGES -->
    <h1 style="color:#330099">Images </h1>
@@ -178,13 +178,6 @@ Videos coming April 1st!
  <!-- End of tabs -->
 
    </div>
- 
-
-
-   
- 
-
-
 
 <div class="row">
  <div class="col-xs-6 col-sm-3"></div>
