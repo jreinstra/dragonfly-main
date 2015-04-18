@@ -165,13 +165,13 @@ $("#myModal").css("z-index", "1500");
 Images coming April 1st! 
 
    </div>
-   <div role="tabpanel" class="tab-pane" id="messages">
+   <div role="tabpanel" class="tab-pane" id="Images">
        <h1 style="color:#33CCFF">Videos </h1>
 <hr class="featurette-divider">
 Videos coming April 1st! 
 
    </div>
-   <div role="tabpanel" class="tab-pane" id="settings">Not sure how I'm going to do this yet. </div>
+   <div role="tabpanel" class="tab-pane" id="Images">Not sure how I'm going to do this yet. </div>
  </div>
 
 </div>
