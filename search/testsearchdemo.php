@@ -98,7 +98,7 @@ color:#606060 ;
 
  <!-- Nav tabs -->
  <ul class="nav nav-tabs" role="tablist">
-   <li role="presentation" class="active"><a href="http://dragonflyapp.com/betasearch.html#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
+   <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
    <li role="presentation" class="active"><a href="#Images" aria-controls="Images" role="tab" data-toggle="tab" aria-expanded="true">Images</a></li>
    <li role="presentation" class="active"><a href="#Videos" aria-controls="Videos" role="tab" data-toggle="tab" aria-expanded="true">Videos</a></li>
 
@@ -156,7 +156,7 @@ $("#myModal").css("z-index", "1500");
 <!-- FACTS CONTINUE INFINITELY -->
 
    </div>
-   <div role="tabpanel" class="tab-pane" id="home">
+   <div role="tabpanel" class="tab-pane" id="Images">
 
    <!-- START OF IMAGES -->
    <h1 style="color:#330099">Images </h1>
@@ -165,13 +165,13 @@ $("#myModal").css("z-index", "1500");
 Images coming April 1st! 
 
    </div>
-   <div role="tabpanel" class="tab-pane" id="Images">
+   <div role="tabpanel" class="tab-pane" id="Videos">
        <h1 style="color:#33CCFF">Videos </h1>
 <hr class="featurette-divider">
 Videos coming April 1st! 
 
    </div>
-   <div role="tabpanel" class="tab-pane" id="Images">Not sure how I'm going to do this yet. </div>
+   <div role="tabpanel" class="tab-pane" id="#">Not sure how I'm going to do this yet. </div>
  </div>
 
 </div>
