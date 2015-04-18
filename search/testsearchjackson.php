@@ -8,6 +8,7 @@ $q = strtolower($q);
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . urlencode($q));
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search.php?q=" . urlencode($q));
 $searchname = urlencode($q);
+$searchname = str_replace("+"," ",$searchname);
 $results = json_decode($results, true);
 
 $subject = $results["Subject"];
@@ -30,11 +31,13 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <meta name="description" content="">
    <meta name="author" content="">
 
-   <title><?php echo $searchname; ?> - Dragonfly</title>
+   <title><?php echo $searchname; ?> - dragonfly</title>
 
    <!-- Bootstrap core CSS -->
    <link href="http://beam.la/bootstrap.css" rel="stylesheet">
        <link href="http://beam.la/glyphicons-halflings-regular.svg">
+<script src="http://code.jquery.com/jquery-git2.js"></script>
+         <script type="text/javascript" src="http://dragonflysearch.com/scripts/responsivevoice.js"></script>
 
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic">
  
@@ -70,7 +73,7 @@ color:#606060 ;
 
  
  <body class="">
- <div style="padding-left:10%">
+ <div>
   <div class="col-xs-10 col-sm-6 col-md-7">
 
 <a href="/" style="text-decoration:none;"><h1 class="text-center" style=" color: #D92F03; font-size: 40px;">dragonfly - <i>beta</i> </h1></a>
@@ -101,9 +104,9 @@ color:#606060 ;
 <!-- Button trigger modal -->
 <div class="btn-group" style="padding:5px; color:rgba(255, 255,255, .6)">
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" onClick='document.getElementById("survey").src="https://www.surveymonkey.com/s/PJMKQVL";'>
-  Give us feedback!
+  Feedback!
 </button>
-<button type="button" class="btn btn-default"><a href="http://dragonflysearch.com/<?php echo $radsearch; ?>" style="color:black; text-decoration:none;">Random Search!</a></button>
+<button  type="button" class="btn btn-default"><a   href="http://dragonflysearch.com/<?php echo $radsearch; ?>" style="color:black" >Random!</a></button>
 </div>
 <script>$("#myModal").modal("show");
 $("#myModal").css("z-index", "1500");
@@ -141,7 +144,7 @@ $("#myModal").css("z-index", "1500");
 <?php
 	$i = 1;
 	foreach($facts as $fact) {
-		include($_SERVER["DOCUMENT_ROOT"] . "/resources/page/modules/fact.php");
+		include($_SERVER["DOCUMENT_ROOT"] . "/resources/page/modules/factsbetaalex.php");
 		$i++;
 	}
 ?>
@@ -194,12 +197,12 @@ Videos coming April 1st!
 
 
 <!-- END -->
- <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:23.6%; height:290.5px;"> <form name="contactform" method="post" action="/email.php">
+ <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:30%; height:350px;"> <form name="contactform" method="post" action="/email.php">
 <table style="width:100%; padding:4px;">
 
 <tbody><tr>
 <td valign="top" style="padding:5px;">
-<textarea class="form-control" rows="7" placeholder="Notes" name="comments" maxlength="10000" cols="15"></textarea>
+<textarea class="form-control" rows="10" placeholder="Notes" name="comments" maxlength="10000" cols="15"></textarea>
 </td>
 </tr>
 </tbody></table>
@@ -210,17 +213,20 @@ Videos coming April 1st!
 <div style="padding-right:5px; padding-left:5px;">
 
 
-<input style="padding:5px;" class="form-control" id="exampleInputEmail" placeholder="Email" type="text" name="email" maxlength="80" size="30">
+<input style="padding:10px;" class="form-control" id="exampleInputEmail" placeholder="Email" type="text" name="email" maxlength="80" size="30">
 
 </div>
 <p> </p>
 
-<div style="padding-right:5px; padding-left:5px;">
+<div style="width:200px; padding-right:5px; padding-left:5px;">
 
-<input style="padding:5px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/email.php">    </a>
+<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/email.php">    </a>
 
 </div>
 </form>
+
+<!-- END NOTES AND EMAIL FORM -->    
+
 <!-- End Email Form -->    
 
   </div>
