@@ -102,25 +102,6 @@ color:#606060 ;
    <li role="presentation" class="active"><a href="#" aria-controls="Books" role="tab" data-toggle="tab" aria-expanded="true">Books</a></li>
    <li role="presentation" class="active"><a href="#" aria-controls="Articles" role="tab" data-toggle="tab" aria-expanded="true">Scholarly Articles</a></li>
 
-</div>
-   <div role="tabpanel" class="tab-pane" id="profile">
-
-   <!-- START OF IMAGES -->
-   <h1 style="color:#330099">Images </h1>
-<hr class="featurette-divider">
-
-Images coming April 1st! 
-
-   </div>
-   <div role="tabpanel" class="tab-pane" id="messages">
-       <h1 style="color:#33CCFF">Videos </h1>
-<hr class="featurette-divider">
-Videos coming April 1st! 
-
-   </div>
-   <div role="tabpanel" class="tab-pane" id="settings">Not sure how I'm going to do this yet. </div>
- </div>
-
 
 
 <div class="text-right" style="padding-left:45%;">
