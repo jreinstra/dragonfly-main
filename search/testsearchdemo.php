@@ -99,8 +99,8 @@ color:#606060 ;
  <!-- Nav tabs -->
  <ul class="nav nav-tabs" role="tablist">
    <li role="presentation" class="active"><a href="http://dragonflyapp.com/betasearch.html#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
-   <li role="presentation" class="active"><a href=" " aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Books</a></li>
-   <li role="presentation" class="active"><a href=" " aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Scholarly Articles</a></li>
+   <li role="presentation" class="active"><a href="#" aria-controls="Books" role="tab" data-toggle="tab" aria-expanded="true">Books</a></li>
+   <li role="presentation" class="active"><a href="#" aria-controls="Articles" role="tab" data-toggle="tab" aria-expanded="true">Scholarly Articles</a></li>
 
 </div>
    <div role="tabpanel" class="tab-pane" id="profile">
@@ -121,7 +121,6 @@ Videos coming April 1st!
    <div role="tabpanel" class="tab-pane" id="settings">Not sure how I'm going to do this yet. </div>
  </div>
 
-</div>
 
 
 <div class="text-right" style="padding-left:45%;">
