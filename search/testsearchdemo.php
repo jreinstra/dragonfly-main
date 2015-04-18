@@ -99,8 +99,8 @@ color:#606060 ;
  <!-- Nav tabs -->
  <ul class="nav nav-tabs" role="tablist">
    <li role="presentation" class="active"><a href="http://dragonflyapp.com/betasearch.html#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
-   <li role="presentation" class="active"><a href="#" aria-controls="Images" role="tab" data-toggle="tab" aria-expanded="true">Images</a></li>
-   <li role="presentation" class="active"><a href="#" aria-controls="Articles" role="tab" data-toggle="tab" aria-expanded="true">Scholarly Articles</a></li>
+   <li role="presentation" class="active"><a href="#Images" aria-controls="Images" role="tab" data-toggle="tab" aria-expanded="true">Images</a></li>
+   <li role="presentation" class="active"><a href="#Videos" aria-controls="Videos" role="tab" data-toggle="tab" aria-expanded="true">Videos</a></li>
 
 
 
@@ -156,7 +156,7 @@ $("#myModal").css("z-index", "1500");
 <!-- FACTS CONTINUE INFINITELY -->
 
    </div>
-   <div role="tabpanel" class="tab-pane" id="Images">
+   <div role="tabpanel" class="tab-pane" id="home">
 
    <!-- START OF IMAGES -->
    <h1 style="color:#330099">Images </h1>
