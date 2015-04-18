@@ -55857,7 +55857,7 @@ img {
     <!-- ALL the scripts 
     ================================================== -->
     
-  <script src="http://dragonflysearch.com/scripts/bootstrap.js"></script>
+ <!-- <script src="http://dragonflysearch.com/scripts/bootstrap.js"></script>-->
   		<script type="text/javascript" src="http://dragonflysearch.com/scripts/jquery-1.5.2.min.js"></script>
      <script src="http://dragonflysearch.com/scripts/transition.js"></script>
      <script src="http://dragonflysearch.com/scripts/collapse.js"></script>
