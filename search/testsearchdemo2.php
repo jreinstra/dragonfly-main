@@ -99,9 +99,6 @@ color:#606060 ;
  <!-- Nav tabs -->
  <ul class="nav nav-tabs" role="tablist">
    <li role="presentation" class="active"><a href="http://dragonflyapp.com/betasearch.html#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
- <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" style="" >Images</a></li>
-   <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Videos</a></li>
-   <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Books</a></li>
 
 <div class="text-right" style="padding-left:45%;">
 <!-- Button trigger modal -->
@@ -119,7 +116,7 @@ $("#myModal").css("z-index", "1500");
   <div class="modal-dialog" style="width:80%; height:95%;">
     <div class="modal-content" style="height:97%;">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Ã—</span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         <h4 class="modal-title text-left" id="myModalLabel">Fill out a 5 question survey</h4>
       </div>
       <div class="modal-body">
