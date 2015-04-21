@@ -116,7 +116,7 @@ $("#myModal").css("z-index", "1500");
   <div class="modal-dialog" style="width:80%; height:95%;">
     <div class="modal-content" style="height:97%;">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Ã—</span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         <h4 class="modal-title text-left" id="myModalLabel">Fill out a 5 question survey</h4>
       </div>
       <div class="modal-body">
