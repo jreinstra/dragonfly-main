@@ -98,7 +98,11 @@ color:#606060 ;
 
  <!-- Nav tabs -->
  <ul class="nav nav-tabs" role="tablist">
-   <li role="presentation" class="active"><a href="http://dragonflyapp.com/betasearch.html#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
+   <li role="presentation" class="active"><a href="#1" aria-controls="1" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
+   <li role="presentation"><a href="#2" aria-controls="2" role="tab" data-toggle="tab" aria-expanded="true">Images</a></li>
+   <li role="presentation"><a href="#3" aria-controls="3" role="tab" data-toggle="tab" aria-expanded="true">Videos</a></li>
+   <li role="presentation"><a href="#4" aria-controls="4" role="tab" data-toggle="tab" aria-expanded="true">Books</a></li>
+   <li role="presentation"><a href="#5" aria-controls="5" role="tab" data-toggle="tab" aria-expanded="true">Articles</a></li>
 
 <div class="text-right" style="padding-left:45%;">
 <!-- Button trigger modal -->
@@ -134,7 +138,7 @@ $("#myModal").css("z-index", "1500");
 
  <!-- Tab panes -->
  <div class="tab-content">
-   <div role="tabpanel" class="tab-pane active" id="home">
+   <div role="tabpanel" class="tab-pane active" id="1">
 
    <!-- FACTS SECTION START -->
 <h1 style="color: 47A2B2"><?php echo $searchname; ?> </h1>
@@ -152,22 +156,30 @@ $("#myModal").css("z-index", "1500");
 <!-- FACTS CONTINUE INFINITELY -->
 
    </div>
-   <div role="tabpanel" class="tab-pane" id="profile">
+      <!-- START OF IMAGES -->
 
-   <!-- START OF IMAGES -->
+   <div role="tabpanel" class="tab-pane" id="2">
+
    <h1 style="color:#330099">Images </h1>
 <hr class="featurette-divider">
 
 Images coming April 1st! 
 
    </div>
-   <div role="tabpanel" class="tab-pane" id="messages">
+             <!-- END OF OF IMAGES --> 
+
+          <!-- START OF VIDEOS --> 
+
+   <div role="tabpanel" class="tab-pane" id="3">
        <h1 style="color:#33CCFF">Videos </h1>
 <hr class="featurette-divider">
 Videos coming April 1st! 
 
    </div>
-   <div role="tabpanel" class="tab-pane" id="settings">Not sure how I'm going to do this yet. </div>
+             <!-- START OF BOOKS --> 
+
+   <div role="tabpanel" class="tab-pane" id="4">Not sure how we're going to do this yet. </div>
+   
  </div>
 
 </div>
