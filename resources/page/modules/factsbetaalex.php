@@ -25,9 +25,7 @@
       </div>
       <div class="modal-body">
       <!--Facts-->
-       <div  class=".col-md-8" style="height:500px; background-color:blue;"> 
-       
-       
+       <div  class=".col-md-8" style="background-color:blue; height:500px; "> 
        </div> 
        <!-- More info -->
        
