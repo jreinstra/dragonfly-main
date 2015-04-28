@@ -25,7 +25,8 @@
       </div>
       <div class="modal-body">
       <!--Facts-->
-       <div  class="col-md-8" style="background-color:blue; height:480px; "> 
+       <div  class="col-md-8" style=" "> 
+       <p> <?php echo $fact; ?> </p>
        </div> 
        <!-- More info -->
        
