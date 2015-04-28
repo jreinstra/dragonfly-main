@@ -8,7 +8,8 @@
   <button type="button" class="btn btn-group-sm btn-default"> <a href="#" rel="tooltip" title="" class="tooltip-test" data-original-title="Did this fact address your search?"><img src="http://beemsearch.com/glyphicons_343_thumbs_up.png" style="width:18px; height:18px;"> </a><script>  tooltip  $('.tooltip-test').tooltip() </script></button>
     <button type="button" class="btn btn-group-sm btn-default"> <a href="#" rel="tooltip" title="" class="tooltip-test" data-original-title="Did this fact address your search?"><img src="http://beemsearch.com/glyphicons_344_thumbs_down.png" style="width:18px; height:18px;"></a><script>  tooltip  $('.tooltip-test').tooltip() </script></button>
  <button type="button" class="btn btn-group-sm btn-default" data-toggle="modal" data-target="#myModal2"  > <img src="http://beam.la/glyphicons-187-move.png" style="width:18px; height:18px;"></button>
- <button type="button" class="btn btn-group-sm btn-default"   onclick="responsiveVoice.speak('<?php echo $fact; ?>');"> <img src="http://dragonflysearch.com/images/glyphicons-185-volume-up.png" style="width:18px; height:18px;"></button>
+ <button type="button" class="btn btn-group-sm btn-default"  > <img src="http://dragonflysearch.com/images/glyphicons-185-volume-up.png" style="width:18px; height:18px;"></button>
+<button type="button" class="btn btn-group-sm btn-default"   onclick="responsiveVoice.speak('<?php echo $fact; ?>');"> <img src="http://beam.la/glyphicons-151-edit.png" style="width:18px; height:18px;"></button>
 
 <!-- Large modal -->
 
