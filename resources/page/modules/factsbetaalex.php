@@ -24,10 +24,8 @@
         <h4 class="modal-title text-left" id="myModalLabel">en.wikipedia.org/<?php echo $subject; ?></h4>
       </div>
       <div class="modal-body">
-       <div style="width:50%; height:500px; background-color:blue;"> </div>
-       <div style="padding-left:50%; width:50%; height:250px; background-color:green;"> </div>
-       <div style="padding-left:50%; padding-top:250px; width:50%; height:250px; background-color:yellow;"> </div>
-      </div>
+       <div  class="col-md-8" style="background-color:blue"> </div> 
+       </div>
       <div class="modal-footer">
       </div>
     </div>
