@@ -25,11 +25,11 @@
       </div>
       <div class="modal-body">
       <!--Facts-->
-       <div  class="col-md-8" style="background-color:blue; height:500px; "> 
+       <div  class="col-md-8" style="background-color:blue; height:480px; "> 
        </div> 
        <!-- More info -->
        
-       <div  class="col-md-4" style="background-color:green;  height:500px;"> </div> 
+       <div  class="col-md-4" style="background-color:green;  height:480px;"> </div> 
        </div>
       <div class="modal-footer">
       </div>
