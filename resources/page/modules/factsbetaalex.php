@@ -32,7 +32,7 @@
        </div> 
        <!-- More info -->
        
-       <div  class=".col-md-4" style="background-color:green; height:500px;"> </div> 
+       <div  class=".col-md-4" style="background-color:green; padding-left:60%; height:500px;"> </div> 
        </div>
       <div class="modal-footer">
       </div>
