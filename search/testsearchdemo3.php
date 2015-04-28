@@ -177,14 +177,21 @@ Videos coming April 1st!
 
    </div>
              <!-- START OF BOOKS --> 
-       <h1 style="color:#33CCFF">Books </h1>
+      
 
-   <div role="tabpanel" class="tab-pane" id="4">Not sure how we're going to do this yet. </div>
+   <div role="tabpanel" class="tab-pane" id="4">
+    <h1 style="color:#33CCFF">Books </h1>
+ <p>  Not sure how we're going to do this yet. </p>
+   
+   </div>
       
                    <!-- START OF ARTICLES --> 
-       <h1 style="color:#33CCFF">Articles </h1>
 
-      <div role="tabpanel" class="tab-pane" id="5">Not sure how we're going to do this yet. </div>
+      <div role="tabpanel" class="tab-pane" id="5">
+             <h1 style="color:#33CCFF">Articles </h1>
+
+     <p> Not sure how we're going to do this yet. </p>
+      </div>
 
  </div>
 
