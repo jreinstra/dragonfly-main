@@ -24,11 +24,12 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
     <meta name="author" content="">
 
     <title>dragonfly</title>
-   <link href="http://dragonflysearch.com/stylesheets/autocomplete.css" rel="stylesheet" type="text/css" />
+   <link href="http://harvix.com/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
         
+		<script type="text/javascript" src="http://harvix.com/jquery-1.5.2.min.js"></script>
   
     <!-- Bootstrap core CSS -->
-  <link href="http://dragonflysearch.com/stylesheets/bootstrap.css" rel="stylesheet">
+  <link href="http://beam.la/bootstrap.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -39,8 +40,10 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
         <script type="text/javascript">
 			$(function(){
 
-    $('#searchBox').autocomplete([	
-
+    $('#searchBox').autocomplete(	
+    
+  [
+    
 "00 Agent",
 "0 (number)", "100,000 Whys (Faye Wong album)", "1000Memories", "100 Huntley Street", "$100 laptop", "100-pounder breech-loader", "101 series", "102nd Rescue Squadron", "1030s in England", "105th Ohio Infantry",
 "106th Pennsylvania Infantry",
@@ -55710,6 +55713,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
 "Zynga",
 "ZZ Top"
 
+ 
+
 ], {
         width:223,
         max: 10
@@ -55733,9 +55738,10 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+  </script>
+
 
 </head>
-  </script>
 
 
   <style>
@@ -55794,7 +55800,7 @@ img {
   <div class="modal-dialog" style="width:90%; ">
     <div class="modal-content" style="height:600px">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Ã—</span></button>
         <h4 class="modal-title" id="myModalLabel" style="color:red;">Dragonfly Full Launch Within a Few Weeks</h4>
       </div>
       <div class="modal-body">
@@ -55813,7 +55819,7 @@ img {
 <h2 class="text-center" style="color:red;">dragonfly - <i>beta</i></h2>
 
 </a>
-<form action="/search/testsearch2.php" method="GET">
+<form action="/search/" method="GET">
 	<div class="input-group" style="width:80%; padding-left:20%;">
 		<input  id="searchBox" autocomplete="off" spellcheck="false" name="q" placeholder="Research engine for students" type="text" class="form-control" style="background-color:rgba(255, 255, 255, .7);">
 		
@@ -55854,18 +55860,12 @@ img {
     
       
 
-    <!-- ALL the scripts 
+    <!-- Bootstrap core JavaScript
     ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     
- <!-- <script src="http://dragonflysearch.com/scripts/bootstrap.js"></script>-->
-  		<script type="text/javascript" src="http://dragonflysearch.com/scripts/jquery-1.5.2.min.js"></script>
-     <script src="http://dragonflysearch.com/scripts/transition.js"></script>
-     <script src="http://dragonflysearch.com/scripts/collapse.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
- <script src="http://dragonflysearch.com/scripts/bootstrap.min.js"></script>
- <script src="http://dragonflysearch.com/scripts/docs.min.js"></script>
-
+  <script src="http://beam.la/bootstrap.js"></script>
+  
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
  <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
