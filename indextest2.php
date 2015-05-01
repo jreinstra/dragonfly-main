@@ -42,7 +42,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
 
     $('#searchBox').autocomplete(	
     
-  <?php  $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . urlencode($q));
+  <?php 
+  $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . "Steve");
   echo $results;
 ?>
     
