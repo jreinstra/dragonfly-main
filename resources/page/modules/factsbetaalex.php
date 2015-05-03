@@ -26,13 +26,15 @@
       </div>
       <div class="modal-body">
       <!--Facts-->
-       <div  class="col-xs-12 col-md-8" style=" "> 
+      
+      <div  class="col-xs-12 col-md-8" style=" "> 
        <p> <?php echo $fact; ?> </p>
        </div> 
        <!-- More info -->
-       
+       <div class="row col-xs-6 col-md-4">
        <div  class="col-xs-6 col-md-4" style="background-color:green;  height:240px;"> </div> 
        <div class="col-xs-6 col-md-4" style="background-color:blue;  height:240px;"> </div>
+       </div>
        </div>
       <div class="modal-footer">
       </div>
