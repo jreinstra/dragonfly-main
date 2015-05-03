@@ -32,8 +32,8 @@
        </div> 
        <!-- More info -->
        <div class="row col-xs-6 col-md-4">
-       <div  class="col-xs-6 col-md-4" style="background-color:green;  height:240px;"> </div> 
-       <div class="col-xs-6 col-md-4" style="background-color:blue;  height:240px;"> </div>
+       <div  class="" style="background-color:green;  height:240px;"> </div> 
+       <div class="" style="background-color:blue;  height:240px;"> </div>
        </div>
        </div>
       <div class="modal-footer">
