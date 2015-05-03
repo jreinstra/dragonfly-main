@@ -32,7 +32,10 @@
        </div> 
        <!-- More info -->
        <div class="row col-xs-6 col-md-4">
-       <div  class="" style="background-color:green;  height:240px;"> </div> 
+       <div  class="" style=""> 
+         <img style="width:50%;" src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg">
+        <img style="width:50%;" src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg">
+       </div> 
        <div class="" style="background-color:blue;  height:240px;"> </div>
        </div>
        </div>
