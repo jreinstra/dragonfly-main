@@ -27,25 +27,19 @@
       <div class="modal-body">
       <!--Facts-->
       
-      <div  class="col-xs-6 col-md-3" style=" "> 
-       <p> <b><?php echo $i; ?></b><?php echo $fact; ?> </p>
-       </div> 
-       <!-- More info -->
-       <div class="row">
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg" alt="...">
-    </a>
-  </div>
- <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg" alt="...">
-    </a>
+  <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="..." alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
   </div>
 </div>
-        
-       </div> 
-       <div class="" style="background-color:blue;  height:240px;"> </div>
+       
        </div>
        </div>
       <div class="modal-footer">
