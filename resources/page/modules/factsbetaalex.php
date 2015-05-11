@@ -32,7 +32,7 @@
       <div class="caption">
         <h3>A Main Idea</h3>
         <p>Echoing facts about one of the main ideas pulled from HP's suggest API here.</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <p><a href="#" class="btn btn-info" role="button">Search</a> </p>
       </div>
     </div>
   </div>
@@ -42,7 +42,7 @@
       <div class="caption">
         <h3>A second Main idea</h3>
         <p>Pull this from the website. Echoing facts about one of the main ideas pulled from HP's suggest API here.</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <p><a href="#" class="btn btn-info" role="button">Search</a> </p>
       </div>
     </div>
   </div>
@@ -52,7 +52,7 @@
       <div class="caption">
         <h3>Thumbnail label</h3>
         <p>Pull this from the website. Echoing facts about one of the main ideas pulled from HP's suggest API here.</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <p><a href="#" class="btn btn-info" role="button">Search</a></p>
       </div>
     </div>
   </div>
