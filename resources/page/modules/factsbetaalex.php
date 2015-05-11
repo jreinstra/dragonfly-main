@@ -14,8 +14,6 @@
 <!-- Large modal -->
 
 
- 
-
 <!-- Modal -->
 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
   <div class="modal-dialog" style="width:80%; height:93%;">
@@ -30,30 +28,30 @@
   <div class="row">
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="..." alt="...">
+      <img src="http://cdn.animals-pics.com/pictures/ruthlesshumor.com/wp-content/uploads/2012/02/cool-animals-5.jpg" alt="...">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
+        <h3>A Main Idea</h3>
+        <p>Echoing facts about one of the main ideas pulled from HP's suggest API here.</p>
         <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
       </div>
     </div>
   </div>
    <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="..." alt="...">
+      <img src="http://cdn.animals-pics.com/pictures/ruthlesshumor.com/wp-content/uploads/2012/02/cool-animals-5.jpg" alt="...">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
+        <h3>A second Main idea</h3>
+        <p>Pull this from the website. Echoing facts about one of the main ideas pulled from HP's suggest API here.</p>
         <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
       </div>
     </div>
   </div>
    <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="..." alt="...">
+      <img src="http://cdn.animals-pics.com/pictures/ruthlesshumor.com/wp-content/uploads/2012/02/cool-animals-5.jpg" alt="...">
       <div class="caption">
         <h3>Thumbnail label</h3>
-        <p>...</p>
+        <p>Pull this from the website. Echoing facts about one of the main ideas pulled from HP's suggest API here.</p>
         <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
       </div>
     </div>
