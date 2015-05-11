@@ -31,10 +31,19 @@
        <p> <b><?php echo $i; ?></b><?php echo $fact; ?> </p>
        </div> 
        <!-- More info -->
-       <div class="row col-xs-6 col-md-4">
-       <div class="col-xs-6 col-md-4"> 
-         <img style="width:100%;" src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg">
-        <img style="width:100%;" src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg">
+       <div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg" alt="...">
+    </a>
+  </div>
+ <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg" alt="...">
+    </a>
+  </div>
+</div>
+        
        </div> 
        <div class="" style="background-color:blue;  height:240px;"> </div>
        </div>
