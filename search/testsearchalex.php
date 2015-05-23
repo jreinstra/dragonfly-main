@@ -78,7 +78,7 @@ color:#606060 ;
     <div class="col-xs-10 col-sm-6 col-md-8">
       <a href="/" style="text-decoration:none;"><h1 class="text-center" style=" color: #D92F03; font-size: 40px;">dragonfly - <i>beta</i> </h1></a>
 
-   <form action="/search/" method="GET">
+   <form action="/search/testsearchalex.php" method="GET">
        <div class="input-group">
          <input  name="q" value="<?php echo $searchname; ?>" type="text" class="form-control" placeholder="What are you looking for?">
          <span class="input-group-btn">
