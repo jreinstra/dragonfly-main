@@ -9,5 +9,9 @@ headers = {
 # Download EB article with fake User-Agent
 r = requests.get("http://m.eb.com/topic/129392/community-ecology", headers=headers)
 
+#print r.text
 soup = BeautifulSoup(r.text)
+
+for this_div in soup.find_all("div", class_="article"):
+	print(this_div.get_text().encode('ascii', 'ignore'))
 
