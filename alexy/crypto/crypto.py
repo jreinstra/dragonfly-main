@@ -1,0 +1,41 @@
+#!/usr/bin/env python2
+ 
+from os import urandom
+import editdistance
+
+def genkey(length):
+    """Generate key"""
+    return urandom(length).encode('base-64')
+ 
+def xor_strings(s,t):
+    """xor two strings together"""
+    return "".join(chr(ord(a)^ord(b)) for a,b in zip(s,t))
+
+def hamdist(str1, str2):
+    diffs = 0
+    for ch1, ch2 in zip(str1, str2):
+            if ch1 != ch2:
+                    diffs += 1
+    return diffs
+
+for i in range(41):
+	print i
+
+print editdistance.eval('this is a test','wokka wokka!!!')
+message = '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'
+#print 'message:', message
+
+
+key = 'whateverasfad'
+#key = genkey(len(message))
+#print 'key:', key
+ 
+cipherText = xor_strings(message, key)
+print 'cipherText:', cipherText
+print 'decrypted:', xor_strings(cipherText,key)
+ 
+# verify
+if xor_strings(cipherText, key) == message:
+    print 'Unit test passed'
+else:
+    print 'Unit test failed'
