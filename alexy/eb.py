@@ -32,6 +32,8 @@ def get_article_text(id):
 			tag.replaceWith("")
 		for tag in this_div.find_all('p', style="text-indent:0"):
 			tag.replaceWith("")
+		for tag in this_div.find_all('h1'):
+			tag.replaceWith(tag.get_text() + ", ")
 
 		# If we find 'Authors of this article:', assume the article is finished and trim everything after that
 		raw_text = this_div.get_text()
