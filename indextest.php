@@ -55819,7 +55819,7 @@ img {
 <h2 class="text-center" style="color:red;">dragonfly - <i>beta</i></h2>
 
 </a>
-<form action="/search/" method="GET">
+<form action="/search/testsearchalexcodeday.php?q=" method="GET">
 	<div class="input-group" style="width:80%; padding-left:20%;">
 		<input  id="searchBox" autocomplete="off" spellcheck="false" name="q" placeholder="Research engine for students" type="text" class="form-control" style="background-color:rgba(255, 255, 255, .7);">
 		
