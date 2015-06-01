@@ -156,7 +156,61 @@ $("#myModal").css("z-index", "1500");
 
     <h1 style="color:#330099">Images </h1>
     <hr class="featurette-divider">
-    Images coming April 1st! 
+    
+    
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+		<html xmlns="http://www.w3.org/1999/xhtml">
+		  <head>
+		    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		    <title>Image Search</title>
+		    <script src="https://www.google.com/jsapi"
+		        type="text/javascript"></script>
+		    <script language="Javascript" type="text/javascript">
+		    //<!
+
+				var searchName = "<?php echo $searchname; ?>";
+
+		    google.load('search', '1');
+
+		    function OnLoad() {
+		      // Create a search control
+		      var searchControl = new google.search.SearchControl();
+
+		      // Add in a full set of searchers
+		      var localSearch = new google.search.LocalSearch();
+		      searchControl.addSearcher(new google.search.ImageSearch());
+
+
+		      // Set the Local Search center point
+		      localSearch.setCenterPoint("New York, NY");
+
+		      // tell the searcher to draw itself and tell it where to attach
+		      searchControl.draw(document.getElementById("searchcontrol"));
+
+		      // execute an inital search - sub dragonfly for $searchname!!!!
+		      searchControl.execute(searchName);
+		    }
+		    google.setOnLoadCallback(OnLoad);
+
+		    //]]>
+		    </script>
+		  </head>
+		  <body>
+		    <div id="searchcontrol">Loading</div>
+		  </body>
+		  <!--Link: https://developers.google.com/web-search/docs/?csw=1#fonje-->
+		</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </div>
 <!-- END OF OF IMAGES --> 
 
@@ -164,14 +218,99 @@ $("#myModal").css("z-index", "1500");
    <div role="tabpanel" class="tab-pane" id="3">
        <h1 style="color:#33CCFF">Videos </h1>
 <hr class="featurette-divider">
-Videos coming April 1st! 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<title>Video Search</title>
+		<script src="https://www.google.com/jsapi"
+				type="text/javascript"></script>
+		<script language="Javascript" type="text/javascript">
+		//<!
+
+		var searchName = "<?php echo $searchname; ?>";
+
+		google.load('search', '1');
+
+		function OnLoad() {
+			// Create a search control
+			var searchControl = new google.search.SearchControl();
+
+			// Add in a full set of searchers
+			var localSearch = new google.search.LocalSearch();
+			searchControl.addSearcher(new google.search.VideoSearch());
+
+
+			// Set the Local Search center point
+			localSearch.setCenterPoint("New York, NY");
+
+			// tell the searcher to draw itself and tell it where to attach
+			searchControl.draw(document.getElementById("videos"));
+
+			// execute an inital search - sub dragonfly for $searchname!!!!
+			searchControl.execute(searchName);
+		}
+		google.setOnLoadCallback(OnLoad);
+
+		//]]>
+		</script>
+	</head>
+	<body>
+		<div id="videos">Videos go here</div>
+	</body>
+	<!--Link: https://developers.google.com/web-search/docs/?csw=1#fonje-->
+</html>
 
    </div>
 <!-- START OF BOOKS --> 
 
    <div role="tabpanel" class="tab-pane" id="4">
     <h1 style="color:#33CCFF">Books </h1>
-    <p>  Not sure how we're going to do this yet. </p>
+    
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+				"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+		<html xmlns="http://www.w3.org/1999/xhtml">
+			<head>
+				<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+				<title>Book Search</title>
+				<script src="https://www.google.com/jsapi"
+						type="text/javascript"></script>
+				<script language="Javascript" type="text/javascript">
+				//<!
+
+				var searchName = "<?php echo $searchname; ?>";
+
+				google.load('search', '1');
+
+				function OnLoad() {
+					// Create a search control
+					var searchControl = new google.search.SearchControl();
+
+					// Add in a full set of searchers
+					var localSearch = new google.search.LocalSearch();
+					searchControl.addSearcher(new google.search.BookSearch());
+
+
+					// Set the Local Search center point
+					localSearch.setCenterPoint("New York, NY");
+
+					// tell the searcher to draw itself and tell it where to attach
+					searchControl.draw(document.getElementById("books"));
+
+					// execute an inital search - sub dragonfly for $searchname!!!!
+					searchControl.execute(searchName);
+				}
+				google.setOnLoadCallback(OnLoad);
+
+				//]]>
+				</script>
+			</head>
+			<body>
+				<div id="books">Books go here</div>
+			</body>
+			<!--Link: https://developers.google.com/web-search/docs/?csw=1#fonje-->
+		</html>
    
    </div>
       
