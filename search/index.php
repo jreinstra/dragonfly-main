@@ -80,9 +80,9 @@ color:#606060 ;
 
    <form action="/search/testsearchalexcodeday.php" method="GET">
        <div class="input-group">
-         <input  name="q" value="<?php echo $searchname; ?>" type="text" class="form-control" placeholder="What are you looking for testing now?">
+         <input  name="q" value="<?php echo $searchname; ?>" type="text" class="form-control" placeholder="What are you researching?">
          <span class="input-group-btn">
-         <button class="btn btn-default" type="submit">Fly</button>
+         <button class="btn btn-default" type="submit">Fly!</button>
          </span>
        </div><!-- /input-group -->
      </form>
