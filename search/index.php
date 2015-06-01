@@ -82,7 +82,7 @@ color:#606060 ;
        <div class="input-group">
          <input  name="q" value="<?php echo $searchname; ?>" type="text" class="form-control" placeholder="What are you researching?">
          <span class="input-group-btn">
-         <button class="btn btn-default" type="submit">Flying</button>
+         <button class="btn btn-default" type="submit">Fly</button>
          </span>
        </div><!-- /input-group -->
      </form>
