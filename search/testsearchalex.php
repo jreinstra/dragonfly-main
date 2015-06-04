@@ -345,7 +345,7 @@ $("#myModal").css("z-index", "1500");
 
  <!-- START OF NOTES -->
  <div style="padding-top:90px;" class="col-xs-6 col-sm-3">  
- <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:30%; height:350px;"> <form name="contactform" method="post" action="/emailtest.php">
+ <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:30%; height:350px;"> <form name="contactform" method="post" action="/storefile.php">
 <table style="width:100%; padding:4px;">
 
 <tbody><tr>
