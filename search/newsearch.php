@@ -35,7 +35,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <title><?php echo $searchname; ?> - dragonfly</title>
 
    <!-- Core CSS -->
-       <link href="http://beam.la/bootstrap.css" rel="stylesheet"> 
+       <link href="http://dragonflysearch.com/stylesheets/bootstrap.css" rel="stylesheet"> 
        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic">
        <link rel="stylesheet" href="http://dragonflyapp.com/modern.css">
  
@@ -83,7 +83,7 @@ color:#606060 ;
 
    <form action="/search/newsearch.php" method="GET">
        <div class="input-group">
-         <input  name="q" value="<?php echo $searchname; ?>" type="text" class="form-control" placeholder="What are you researching?">
+         <input  name="q" value="<?php echo $searchname; ?>" type="text" class="form-control" placeholder="What are you researching?"  style="background-color:rgba(255, 255, 255, .7);">
          <span class="input-group-btn">
          <button class="btn btn-default" type="submit">Fly</button>
          </span>
@@ -134,10 +134,10 @@ color:#606060 ;
    ================================================== -->
    <!-- Placed at the end of the document  -->
   
-  <script src="http://beam.la/npm.js"></script>
-   <script src="http://beam.la/bootstrap.js"></script>
-     <script src="http://beam.la/transition.js"></script>
-     <script src="http://beam.la/collapse.js"></script>
+  <script src="http://dragonflysearch.com/scripts/bootstrap.js"></script>
+   <script src="http://dragonflysearch.com/scripts/npm.js"></script>
+     <script src="http://dragonflysearch.com/scripts/transition.js"></script>
+     <script src="http://dragonflysearch.com/scripts/collapse.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script> --> 
