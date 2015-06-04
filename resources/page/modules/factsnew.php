@@ -8,12 +8,9 @@
 </p> 
  <a href="http://www.britannica.com/search?query=<?php echo $subject; ?>"  target="_blank"><small  style="color:white;">Encyclopedia Britannica<cite title="Source Title"></cite></small></a>
 <div><div class="btn-group btn-group-sm" role="group" aria-label="...">
-  <button type="button" class="btn btn-group-sm btn-default"> <a href="#" rel="tooltip" title="" class="tooltip-test" data-original-title="Did this fact address your search?"><img src="http://beemsearch.com/glyphicons_343_thumbs_up.png" style="width:18px; height:18px;"> </a><script>  tooltip  $('.tooltip-test').tooltip() </script></button>
-    <button type="button" class="btn btn-group-sm btn-default"> <a href="#" rel="tooltip" title="" class="tooltip-test" data-original-title="Did this fact address your search?"><img src="http://beemsearch.com/glyphicons_344_thumbs_down.png" style="width:18px; height:18px;"></a><script>  tooltip  $('.tooltip-test').tooltip() </script></button>
-
-
-<button type="submit" class="btn btn-group-sm btn-default"  data-toggle="button" aria-pressed="false" autocomplete="off"> <a href="/storefile.php"><img src="http://beam.la/glyphicons-151-edit.png" style="width:18px; height:18px;"> </a></button>
-<!--<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save">   -->
+  <button type="button" class="btn btn-group-sm btn-default"> <a href="#" rel="tooltip" title="" class="tooltip-test" data-original-title="Did this fact address your search?"><img src="http://beemsearch.com/glyphicons_343_thumbs_up.png" style="width:18px; height:18px;"> </a></button>
+    <button type="button" class="btn btn-group-sm btn-default"> <a href="#" rel="tooltip" title="" class="tooltip-test" data-original-title="Did this fact address your search?"><img src="http://beemsearch.com/glyphicons_344_thumbs_down.png" style="width:18px; height:18px;"></a></button>
+<button type="submit" class="btn btn-group-sm btn-default"  data-toggle="button" autocomplete="off"> <a href="/storefile.php"><img src="http://beam.la/glyphicons-151-edit.png" style="width:18px; height:18px;"> </a></button>
 </form>
 
 <button type="button" class="btn btn-group-sm btn-default"   onclick="responsiveVoice.speak('<?php echo $fact; ?>');"> <img src="http://dragonflysearch.com/images/glyphicons-185-volume-up.png" style="width:18px; height:18px;"></button>
