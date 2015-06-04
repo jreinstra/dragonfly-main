@@ -78,7 +78,7 @@ color:#606060 ;
  <body>
  <div  style="padding-left:15%;">
   <div>
-    <div class="col-xs-10 col-sm-6 col-md-8">
+    <div class="col-xs-10 col-sm-4 col-md-8">
       <a href="/" style="text-decoration:none;"><h1 class="text-center" style=" color: #D92F03; font-size: 40px;">dragonfly - <i>beta</i> </h1></a>
 
    <form action="/search/testsearchalexcodeday.php" method="GET">
