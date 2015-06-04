@@ -361,14 +361,14 @@ $("#myModal").css("z-index", "1500");
 <div style="padding-right:5px; padding-left:5px;">
 
 
-<input style="padding:10px;" class="form-control" id="email " placeholder="Email" type="text" name="email" maxlength="80" size="30">
+<input style="padding:10px;" class="form-control" id="text " placeholder="Email" type="text" name="email" maxlength="80" size="30">
 
 </div>
 <p> </p>
 
 <div style="width:200px; padding-right:5px; padding-left:5px;">
 
-<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/emailtest.php">    </a>
+<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/storefile.php">    </a>
 
 </div>
 </form>
