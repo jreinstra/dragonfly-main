@@ -104,7 +104,7 @@ color:#606060 ;
 <?php
 	$i = 1;
 	foreach($facts as $fact) {
-		include($_SERVER["DOCUMENT_ROOT"] . "/resources/page/modules/factsbetaalexcodeday.php");
+		include($_SERVER["DOCUMENT_ROOT"] . "/resources/page/modules/factsnew.php");
 		$i++;
 	}
 ?>
