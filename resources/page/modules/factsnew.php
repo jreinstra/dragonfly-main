@@ -12,8 +12,8 @@
     <button type="button" class="btn btn-group-sm btn-default"> <a href="#" rel="tooltip" title="" class="tooltip-test" data-original-title="Did this fact address your search?"><img src="http://beemsearch.com/glyphicons_344_thumbs_down.png" style="width:18px; height:18px;"></a><script>  tooltip  $('.tooltip-test').tooltip() </script></button>
 
 
-<button type="submit" class="btn btn-group-sm btn-default"  data-toggle="button" aria-pressed="false" autocomplete="off"> <img src="http://beam.la/glyphicons-151-edit.png" style="width:18px; height:18px;"></button>
-<!--<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/storefile.php">    </a>-->
+<button type="submit" class="btn btn-group-sm btn-default"  data-toggle="button" aria-pressed="false" autocomplete="off"> <a href="/storefile.php"><img src="http://beam.la/glyphicons-151-edit.png" style="width:18px; height:18px;"> </a></button>
+<!--<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save">   -->
 </form>
 
 <button type="button" class="btn btn-group-sm btn-default"   onclick="responsiveVoice.speak('<?php echo $fact; ?>');"> <img src="http://dragonflysearch.com/images/glyphicons-185-volume-up.png" style="width:18px; height:18px;"></button>
