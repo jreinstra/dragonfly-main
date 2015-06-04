@@ -1,5 +1,5 @@
 <blockquote>
-  <p><b><?php echo $i; ?>.</b> <?php echo $fact; ?>
+  <p style="color:white;"><b><?php echo $i; ?>.</b> <?php echo $fact; ?>
                              
 
 </p> 
