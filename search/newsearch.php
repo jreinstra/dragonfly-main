@@ -75,8 +75,8 @@ color:#606060 ;
 </style></head>
 
  
- <body>
- <div  style="">
+ <body style="background-color:#580000;">
+ <div>
   <div>
     <div style="width:70%;">
       <a href="/" style="text-decoration:none;"><h1 class="text-center" style=" color: #D92F03; font-size: 40px;">dragonfly - <i>beta</i> </h1></a>
@@ -98,7 +98,6 @@ color:#606060 ;
  <!-- Tab Content -->
  
  <!-- FACTS SECTION TAB START -->
-   <h1 style="color: 47A2B2"><?php echo $searchname; ?> </h1>
    <p>
    </p><hr class="featurette-divider">
 <!-- This is where all the facts are pulled from. Facts are not loaded and the code for them is not on this page --> 
