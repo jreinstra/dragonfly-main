@@ -159,7 +159,8 @@ $("#myModal").css("z-index", "1500");
     <h1 style="color:#330099">Images </h1>
     <hr class="featurette-divider">
     
-    <!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 		    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 		<html xmlns="http://www.w3.org/1999/xhtml">
 		  <head>
@@ -200,9 +201,14 @@ $("#myModal").css("z-index", "1500");
 		  <body>
 		    <div id="searchcontrol">Loading</div>
 		  </body>
-		  Link: https://developers.google.com/web-search/docs/?csw=1#fonje
-		</html>-->
-
+		  <!--Link: https://developers.google.com/web-search/docs/?csw=1#fonje-->
+		</html>
+    
+    
+    
+    
+    
+    
     
     
     
@@ -214,9 +220,6 @@ $("#myModal").css("z-index", "1500");
    <div role="tabpanel" class="tab-pane" id="3">
        <h1 style="color:#33CCFF">Videos </h1>
 <hr class="featurette-divider">
-
-
-<!--
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -258,22 +261,16 @@ $("#myModal").css("z-index", "1500");
 	<body>
 		<div id="videos">Videos go here</div>
 	</body>
-	Link: https://developers.google.com/web-search/docs/?csw=1#fonje (comment it out if needed)
+	<!--Link: https://developers.google.com/web-search/docs/?csw=1#fonje-->
 </html>
--->
-
-
-
 
    </div>
 <!-- START OF BOOKS --> 
 
    <div role="tabpanel" class="tab-pane" id="4">
     <h1 style="color:#33CCFF">Books </h1>
-   
-   
-   <!--
-   	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 				"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 		<html xmlns="http://www.w3.org/1999/xhtml">
 			<head>
@@ -314,21 +311,12 @@ $("#myModal").css("z-index", "1500");
 			<body>
 				<div id="books">Books go here</div>
 			</body>
-			Link: https://developers.google.com/web-search/docs/?csw=1#fonje
-		</html>-->
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+			<!--Link: https://developers.google.com/web-search/docs/?csw=1#fonje-->
+		</html>
    
    </div>
       
+<!-- START OF ARTICLES --> 
 <!-- START OF ARTICLES --> 
 
       <div role="tabpanel" class="tab-pane" id="5">
