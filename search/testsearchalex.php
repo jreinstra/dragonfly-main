@@ -350,7 +350,7 @@ $("#myModal").css("z-index", "1500");
 
 <tbody><tr>
 <td valign="top" style="padding:5px;">
-<textarea class="form-control" rows="10" placeholder="Notes" name="notes" maxlength="10000" cols="15"></textarea>
+<textarea class="form-control" rows="10" placeholder="Notes" name="text" maxlength="10000" cols="15"></textarea>
 </td>
 </tr>
 </tbody></table>
@@ -361,7 +361,7 @@ $("#myModal").css("z-index", "1500");
 <div style="padding-right:5px; padding-left:5px;">
 
 
-<input style="padding:10px;" class="form-control" id="text " placeholder="Email" type="text" name="email" maxlength="80" size="30">
+<input style="padding:10px;" class="form-control" id="text " placeholder="Email" type="text" name="text" maxlength="80" size="30">
 
 </div>
 <p> </p>
