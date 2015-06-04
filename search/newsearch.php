@@ -78,7 +78,7 @@ color:#606060 ;
  <body style="background-color:#580000;">
  <div style="">
   <div>
-    <div style="width:70%;">
+    <div style="width:70%; padding-left:15%;">
       <a href="/" style="text-decoration:none;"><h1 class="text-center" style=" color: #D92F03; font-size: 40px;">dragonfly - <i>beta</i> </h1></a>
 
    <form action="/search/newsearch.php" method="GET">
