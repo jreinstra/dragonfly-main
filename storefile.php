@@ -1,5 +1,5 @@
 <?php
-$content = $_POST['text'];
+$content = "sometezt";
 $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/myText.txt" ,"wb");
 fwrite($fp,$content);
 fclose($fp);
