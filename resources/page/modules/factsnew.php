@@ -3,7 +3,7 @@
 
 
  <p name="text" style="color:white;"><b><?php echo $i; ?>.</b> <?php echo $fact; ?>
-        <input style="width:0px; text-decoration:none;" name="text" value="<?php echo $fact; ?>" >                   
+        <input style="width:0px; height:0px; background-color:rgba(255, 255, 255, .7); text-decoration:none;" name="text" value="<?php echo $fact; ?>" >                   
 
 </p> 
  <a href="http://www.britannica.com/search?query=<?php echo $subject; ?>"  target="_blank"><small  style="color:white;">Encyclopedia Britannica<cite title="Source Title"></cite></small></a>
