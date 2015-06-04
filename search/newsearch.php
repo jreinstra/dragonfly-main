@@ -132,43 +132,6 @@ color:#606060 ;
    <div class="col-xs-6 col-sm-3"></div>
 
 
- <!-- START OF NOTES -->
- <div style="padding-top:90px;" class="col-xs-6 col-sm-3">  
- <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:30%; height:350px;"> <form name="contactform" method="post" action="/emailtest.php">
-<table style="width:100%; padding:4px;">
-
-<tbody><tr>
-<td valign="top" style="padding:5px;">
-<textarea class="form-control" rows="10" placeholder="Notes" name="notes" maxlength="10000" cols="15"></textarea>
-</td>
-</tr>
-</tbody></table>
-
-
-
-<p> </p>
-<div style="padding-right:5px; padding-left:5px;">
-
-
-<input style="padding:10px;" class="form-control" id="email " placeholder="Email" type="text" name="email" maxlength="80" size="30">
-
-</div>
-<p> </p>
-
-<div style="width:200px; padding-right:5px; padding-left:5px;">
-
-<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/emailtest.php">    </a>
-
-</div>
-</form>
-
-<!-- END NOTES AND EMAIL FORM -->    
-
-<!-- End Email Form -->    
-
-  </div>
-
-</div>
 
    <!-- Bootstrap core JavaScript
    ================================================== -->
