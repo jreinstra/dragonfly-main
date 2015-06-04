@@ -15,8 +15,10 @@
      data-src="http://dragonflysearch.com/myText.txt" 
      data-filename="Notes" 
      data-sitename="Dragonfly"> 
+     </div>
+
+
 <button type="submit" class="btn btn-group-sm btn-default"  > <a href="/storefile.php"><img src="http://beam.la/glyphicons-151-edit.png" style="width:18px; height:18px;"> </a></button>
-</div>
 
 
 </form>
