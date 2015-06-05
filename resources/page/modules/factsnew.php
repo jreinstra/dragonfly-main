@@ -1,3 +1,9 @@
+<script>
+function Addtext()
+{
+document.getElementById("result").value += '<?php echo $fact; ?>';
+}
+</script>
 <blockquote>
 
 
