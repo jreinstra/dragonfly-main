@@ -106,7 +106,15 @@ color:#606060 ;
 
    <textarea class="form-control" maxlength="10000"  cols="5"  rows="3" type="text" id="result">
 </textarea>
-<a href="/storefile.php">Click Me</a>
+<button type="button" class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-sm">Save</button>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <a href="/storefile.php">Click Me</a>
+    </div>
+  </div>
+</div>
 </form>
    </p><hr class="featurette-divider">
 <!-- This is where all the facts are pulled from. Facts are not loaded and the code for them is not on this page --> 
