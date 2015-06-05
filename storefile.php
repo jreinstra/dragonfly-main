@@ -8,5 +8,5 @@ fwrite($fp,$content);
 fclose($fp);
 
 $_SESSION["loop_count"]++;
-}
+
 ?>
