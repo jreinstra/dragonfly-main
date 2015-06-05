@@ -98,7 +98,7 @@ color:#606060 ;
  
  <!-- FACTS SECTION TAB START -->
    <p>
-   <textarea class="form-control" maxlength="10000"  cols="15"  rows="10" type="text" id="result" style="width:50%;">
+   <textarea class="form-control" maxlength="10000"  cols="5"  rows="3" type="text" id="result">
 </textarea>
    </p><hr class="featurette-divider">
 <!-- This is where all the facts are pulled from. Facts are not loaded and the code for them is not on this page --> 
