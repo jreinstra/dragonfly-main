@@ -98,7 +98,7 @@ color:#606060 ;
  
  <!-- FACTS SECTION TAB START -->
    <p>
-   <input class="form-control" maxlength="10000" cols="15" size="30" type="text" id="result" rows="10">
+   <input class="form-control" maxlength="10000" type="text" id="result" style="height:200px; width:50%;">
 
    </p><hr class="featurette-divider">
 <!-- This is where all the facts are pulled from. Facts are not loaded and the code for them is not on this page --> 
