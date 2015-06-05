@@ -35,13 +35,15 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <title><?php echo $searchname; ?> - dragonfly</title>
 
    <!-- Core CSS -->
- <link href="http://beam.la/bootstrap.css" rel="stylesheet">
+   <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- <link href="http://beam.la/bootstrap.css" rel="stylesheet">-->
        <link href="http://beam.la/glyphicons-halflings-regular.svg">
 
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic">
  
 <link rel="stylesheet" href="http://dragonflyapp.com/modern.css">
-<!--<link rel="stylesheet" href="http://chrisgrant.co/css/custom.css">-->
 
 
    <!-- Javascript for speach API -->    
@@ -170,6 +172,7 @@ color:#606060 ;
   <!-- <script src="http://beam.la/bootstrap.js"></script>-->
      <script src="http://beam.la/transition.js"></script>
      <script src="http://beam.la/collapse.js"></script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
