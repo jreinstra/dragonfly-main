@@ -73,8 +73,12 @@ color:#606060 ;
 
 }
 </style></head>
-
- 
+<script>
+function Addtext()
+{
+document.getElementById("result").value += ' your text here';
+}
+</script>
  <body style="background-color:#580000;">
  <div style="">
   <div>
@@ -99,6 +103,8 @@ color:#606060 ;
  
  <!-- FACTS SECTION TAB START -->
    <p>
+   <input type="text" id="result" size="20" rows="3">
+
    </p><hr class="featurette-divider">
 <!-- This is where all the facts are pulled from. Facts are not loaded and the code for them is not on this page --> 
 <?php
