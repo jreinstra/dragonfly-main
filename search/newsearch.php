@@ -98,8 +98,16 @@ color:#606060 ;
  
  <!-- FACTS SECTION TAB START -->
    <p>
+    <form name="contactform" method="post" action="/storefile.php">
+
+
+
+
+
    <textarea class="form-control" maxlength="10000"  cols="5"  rows="3" type="text" id="result">
 </textarea>
+<a href="/storefile.php">Click Me</a>
+</form>
    </p><hr class="featurette-divider">
 <!-- This is where all the facts are pulled from. Facts are not loaded and the code for them is not on this page --> 
 <?php
