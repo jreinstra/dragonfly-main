@@ -73,12 +73,7 @@ color:#606060 ;
 
 }
 </style></head>
-<script>
-function Addtext()
-{
-document.getElementById("result").value += ' your text here';
-}
-</script>
+
  <body style="background-color:#580000;">
  <div style="">
   <div>
