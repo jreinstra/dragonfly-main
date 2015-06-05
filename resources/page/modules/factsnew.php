@@ -1,7 +1,7 @@
 <script>
 function Addtext<?php echo $i; ?>()
 {
-document.getElementById("result").value += '<?php echo $fact; ?>';
+document.getElementById("result").value += '<?php echo $fact; ?>' + 'http://www.britannica.com/search?query=<?php echo $subject; ?> ';
 }
 </script>
 <blockquote>
