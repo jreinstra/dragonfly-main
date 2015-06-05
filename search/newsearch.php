@@ -153,10 +153,10 @@ color:#606060 ;
    ================================================== -->
    <!-- Placed at the end of the document  -->
   
-  <script src="http://dragonflysearch.com/scripts/bootstrap.js"></script>
+<!--  <script src="http://dragonflysearch.com/scripts/bootstrap.js"></script>
    <script src="http://dragonflysearch.com/scripts/npm.js"></script>
      <script src="http://dragonflysearch.com/scripts/transition.js"></script>
-     <script src="http://dragonflysearch.com/scripts/collapse.js"></script>
+     <script src="http://dragonflysearch.com/scripts/collapse.js"></script>-->
  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
   <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
