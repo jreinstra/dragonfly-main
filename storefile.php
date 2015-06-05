@@ -1,5 +1,5 @@
 <?php
-if (!isset($_SESSION["loop_count"]){
+if (!isset($_SESSION["loop_count"])
 $_SESSION["loop_count"] = 0;
 
 $content = $_POST["result"];
