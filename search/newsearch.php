@@ -35,13 +35,16 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <title><?php echo $searchname; ?> - dragonfly</title>
 
    <!-- Core CSS -->
-       <link href="http://dragonflysearch.com/stylesheets/bootstrap.css" rel="stylesheet"> 
-       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic">
-       <link rel="stylesheet" href="http://dragonflyapp.com/modern.css">
- <link href="http://getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+ <link href="http://beam.la/bootstrap.css" rel="stylesheet">
+       <link href="http://beam.la/glyphicons-halflings-regular.svg">
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic">
+ 
+<link rel="stylesheet" href="http://dragonflyapp.com/modern.css">
+<link rel="stylesheet" href="http://chrisgrant.co/css/custom.css">
 
 
-   <!-- Javascript for spech API -->    
+   <!-- Javascript for speach API -->    
        <link href="http://beam.la/glyphicons-halflings-regular.svg">
        <script src="http://code.jquery.com/jquery-git2.js"></script>
        <script type="text/javascript" src="http://dragonflysearch.com/scripts/responsivevoice.js"></script>
@@ -153,19 +156,16 @@ color:#606060 ;
    ================================================== -->
    <!-- Placed at the end of the document  -->
   
-<!--  <script src="http://dragonflysearch.com/scripts/bootstrap.js"></script>
-   <script src="http://dragonflysearch.com/scripts/npm.js"></script>
-     <script src="http://dragonflysearch.com/scripts/transition.js"></script>
-     <script src="http://dragonflysearch.com/scripts/collapse.js"></script>-->
- <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-  <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+ <script src="http://beam.la/npm.js"></script>
+   <script src="http://beam.la/bootstrap.js"></script>
+     <script src="http://beam.la/transition.js"></script>
+     <script src="http://beam.la/collapse.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script> --> 
+ <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
  <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
- <!--SCRIPTS-->
+
+
 <!--END SCRIPTS-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
