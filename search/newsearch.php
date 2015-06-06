@@ -122,9 +122,8 @@ color:#606060 ;
         <h4 class="modal-title">Save</h4>
       </div>
       <div class="modal-body">
-      <h3>To save to Google Docs first click here: </h3>
-      <a href="/storefile.php" target="_blank">Click Me</a>
-      <h3>Then, click here: </h3>
+      <p class="lead">To save to Google Docs <b>first<a href="/storefile.php" target="_blank">click here</a></b> </p>
+      <p class="lead">Then, click the button below: </p>
       <script src="https://apis.google.com/js/platform.js"></script>
 <div class="g-savetodrive" 
      data-src="http://dragonflysearch.com/myText.txt" 
