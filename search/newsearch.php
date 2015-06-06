@@ -35,7 +35,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <title><?php echo $searchname; ?> - dragonfly</title>
 
    <!-- Core CSS -->
-   <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 <!-- <link href="http://beam.la/bootstrap.css" rel="stylesheet">-->
