@@ -113,16 +113,7 @@ color:#606060 ;
 
    <textarea class="form-control" maxlength="10000"  cols="5"  rows="3" type="text" id="result">
 </textarea>
-<button type="button" class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-sm">Save</button>
-
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content"><div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Save</h4>
-      </div>
-      <div class="modal-body">
-      <p class="lead">To save to Google Docs <b>first<a href="/storefile.php" target="_blank"> click here</a></b> </p>
+ <p class="lead">To save to Google Docs <b>first<a href="/storefile.php" target="_blank"> click here</a></b> </p>
       <p class="lead">Then, click the button below: </p>
       <script src="https://apis.google.com/js/platform.js"></script>
 <div class="g-savetodrive" 
@@ -131,13 +122,6 @@ color:#606060 ;
      data-sitename="Dragonfly"> 
 </div>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
 </form>
    </p><hr class="featurette-divider">
 <!-- This is where all the facts are pulled from. Facts are not loaded and the code for them is not on this page --> 
