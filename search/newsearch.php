@@ -117,7 +117,7 @@ color:#606060 ;
       <p class="lead">Then, click the button below: </p>
       <script src="https://apis.google.com/js/platform.js"></script>
 <div class="g-savetodrive" 
-     data-src="http://dragonflysearch.com/myText.txt" 
+     data-src="http://dragonflysearch.com/myText2.txt" 
      data-filename="Notes" 
      data-sitename="Dragonfly"> 
 </div>
