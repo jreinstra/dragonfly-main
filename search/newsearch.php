@@ -104,7 +104,7 @@ color:#606060 ;
  <!-- Tab Content -->
  
  <!-- FACTS SECTION TAB START -->
-   <p>
+   
     <form name="contactform" method="post" action="/storefile.php">
 
 
@@ -123,7 +123,7 @@ color:#606060 ;
 </div>
 
 </form>
-   </p><hr class="featurette-divider">
+   <hr class="featurette-divider">
 <!-- This is where all the facts are pulled from. Facts are not loaded and the code for them is not on this page --> 
 <?php
 	$i = 1;
