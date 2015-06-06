@@ -122,7 +122,7 @@ color:#606060 ;
         <h4 class="modal-title">Save</h4>
       </div>
       <div class="modal-body">
-      <p class="lead">To save to Google Docs <b>first<a href="/storefile.php" target="_blank">click here</a></b> </p>
+      <p class="lead">To save to Google Docs <b>first<a href="/storefile.php" target="_blank"> click here</a></b> </p>
       <p class="lead">Then, click the button below: </p>
       <script src="https://apis.google.com/js/platform.js"></script>
 <div class="g-savetodrive" 
