@@ -104,24 +104,32 @@ color:#606060 ;
  <!-- Tab Content -->
  
  <!-- FACTS SECTION TAB START -->
-   
-    <form name="contactform" method="post" action="/storefile.php">
+    <form name="contactform" method="post" action="/emailtest.php">
+<table style="width:100%; padding:4px;">
+
+<tbody><tr>
+<td valign="top" style="padding:5px;">
+<textarea class="form-control" rows="10" placeholder="Notes" name="notes" maxlength="10000" cols="15"></textarea>
+</td>
+</tr>
+</tbody></table>
 
 
 
+<p> </p>
+<div style="padding-right:5px; padding-left:5px;">
 
 
-   <textarea class="form-control" maxlength="10000"  cols="5"  rows="3" type="text" id="result">
-</textarea>
- <p class="lead">To save to Google Docs <b>first<a href="/storefile.php" target="_blank"> click here</a></b> </p>
-      <p class="lead">Then, click the button below: </p>
-      <script src="https://apis.google.com/js/platform.js"></script>
-<div class="g-savetodrive" 
-     data-src="http://dragonflysearch.com/myText2.txt" 
-     data-filename="Notes" 
-     data-sitename="Dragonfly"> 
+<input style="padding:10px;" class="form-control" id="email " placeholder="Email" type="text" name="email" maxlength="80" size="30">
+
 </div>
+<p> </p>
 
+<div style="width:200px; padding-right:5px; padding-left:5px;">
+
+<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/emailtest.php">    </a>
+
+</div>
 </form>
    <hr class="featurette-divider">
 <!-- This is where all the facts are pulled from. Facts are not loaded and the code for them is not on this page --> 
