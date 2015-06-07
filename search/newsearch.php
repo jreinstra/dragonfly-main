@@ -104,33 +104,31 @@ color:#606060 ;
  <!-- Tab Content -->
  
  <!-- FACTS SECTION TAB START -->
-    <form name="contactform" method="post" action="/emailtest.php">
-<table style="width:100%; padding:4px;">
+    <button type="button" class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-sm">Save</button>
 
-<tbody><tr>
-<td valign="top" style="padding:5px;">
-<textarea class="form-control" rows="10" placeholder="Notes" name="notes" maxlength="10000" cols="15"></textarea>
-</td>
-</tr>
-</tbody></table>
-
-
-
-<p> </p>
-<div style="padding-right:5px; padding-left:5px;">
-
-
-<input style="padding:10px;" class="form-control" id="email " placeholder="Email" type="text" name="email" maxlength="80" size="30">
-
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content"><div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Save</h4>
+      </div>
+      <div class="modal-body">
+      <p class="lead">To save to Google Docs <b>first<a href="/storefile.php" target="_blank"> click here</a></b> </p>
+      <p class="lead">Then, click the button below: </p>
+      <script src="https://apis.google.com/js/platform.js"></script>
+<div class="g-savetodrive" 
+     data-src="http://dragonflysearch.com/myText.txt" 
+     data-filename="Notes" 
+     data-sitename="Dragonfly"> 
 </div>
-<p> </p>
 
-<div style="width:200px; padding-right:5px; padding-left:5px;">
-
-<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/emailtest.php">    </a>
-
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
-</form>
    <hr class="featurette-divider">
 <!-- This is where all the facts are pulled from. Facts are not loaded and the code for them is not on this page --> 
 <?php
