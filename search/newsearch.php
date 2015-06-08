@@ -102,7 +102,9 @@ color:#606060 ;
  <!-- Nav tabs -->
 
  <!-- Tab Content -->
- 
+ <textarea class="form-control" rows="3" placeholder="Notes" name="result" maxlength="10000" cols="15"></textarea>
+
+
  <!-- FACTS SECTION TAB START -->
     <button type="button" class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-sm">Save</button>
 
