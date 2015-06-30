@@ -24,7 +24,9 @@ while($row=mysql_fetch_array($result)){
       echo $row['fact'];
 }
 
-$result = array("Subject"=>$q, "Facts"=>$facts);
+$words = explode(" ", $q);
+
+$result = array("Words"=>$words, "Subject"=>$q, "Facts"=>$facts);
 //echo "<pre>"; print_r($result); echo "</pre>";
 echo json_encode($result);
 
