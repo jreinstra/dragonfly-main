@@ -25,6 +25,11 @@ while($row=mysql_fetch_array($result)){
 }
 
 $words = explode(" ", $q);
+foreach($words as $i=>$word) {
+	if(strlen($word) == 0) {
+		unset($words[$i]);
+	}
+}
 
 $result = array("Words"=>$words, "Subject"=>$q, "Facts"=>$facts);
 //echo "<pre>"; print_r($result); echo "</pre>";
