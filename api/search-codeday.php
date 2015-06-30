@@ -4,7 +4,7 @@ $q = urldecode($_GET["q"]);
 
 //$subject = getSubject($q);
 
-$sql = 'SELECT fact FROM eb.facts WHERE fact LIKE "%' . $q . '%"';
+$sql = 'SELECT fact FROM eb.facts WHERE article_name LIKE "%' . $q . '%"';
 
 $stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
 	mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
