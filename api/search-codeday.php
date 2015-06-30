@@ -3,8 +3,10 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
 $q = urldecode($_GET["q"]);
 
 //$subject = getSubject($q);
+if(substr($q, 0, 1) != " ") $q = " " . $q;
+if(substr($q, -1) != " ") $q = $q . " ";
 
-$sql = 'SELECT fact FROM eb.facts WHERE article_name LIKE "%' . $q . '%"';
+$sql = 'SELECT fact FROM eb.facts WHERE fact LIKE "%' . $q . '%"';
 
 $stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
 	mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
@@ -22,9 +24,7 @@ while($row=mysql_fetch_array($result)){
       echo $row['fact'];
 }
 
-$subject = $q;
-
-$result = array("Subject"=>$subject, "Facts"=>$facts);
+$result = array("Subject"=>$q, "Facts"=>$facts);
 //echo "<pre>"; print_r($result); echo "</pre>";
 echo json_encode($result);
 
