@@ -24,10 +24,11 @@ while($row=mysql_fetch_array($result)){
       echo $row['fact'];
 }
 
-$words = explode(" ", $q);
-for($i = 0; $i < count($words); $i++) {
-	if(strlen($words[$i]) == 0) {
-		unset($words[$i]);
+$uncut = explode(" ", $q);
+$words = array();
+foreach($uncut as $word) {
+	if(strlen($word) > 0) {
+		$words[] = $word;
 	}
 }
 
