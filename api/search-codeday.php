@@ -25,8 +25,8 @@ while($row=mysql_fetch_array($result)){
 }
 
 $words = explode(" ", $q);
-foreach($words as $i=>$word) {
-	if(strlen($word) == 0) {
+for($i = 0; $i < count($words); $i++) {
+	if(strlen($words[$i]) == 0) {
 		unset($words[$i]);
 	}
 }
