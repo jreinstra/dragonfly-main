@@ -1,5 +1,5 @@
 <?php
-echo "debug 7<br>";
+echo "debug 9<br>";
 require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
 $q = urldecode($_GET["q"]);
 echo "hola 1<br>";
@@ -13,7 +13,7 @@ foreach($uncut as $word) {
 
 echo "<pre>"; print_r($words); echo "</pre>";
 
-/*$matches = array();
+$matches = array();
 foreach($words as $word) {
 	$word = strtolower($word);
 	$sql = "SELECT fact_id, occurrences FROM lexicon WHERE term=? ORDER BY occurrences DESC";
@@ -37,7 +37,7 @@ foreach($words as $word) {
 	}
 	mysqli_stmt_close($stmt);
 	echo "hello 4<br>";
-	if($empty == true) {
+	/*if($empty == true) {
 		$q = strtolower($word);
 		if(substr($q, 0, 1) != " ") $q = " " . $q;
 		if(substr($q, -1) != " ") $q = $q . " ";
@@ -64,7 +64,7 @@ foreach($words as $word) {
 			$matches[$newFact["ID"]] = $matches[$newFact["ID"]] + $newFactMatches;
 		}
 		echo "here 3<br>";
-	}
+	}*/
 }
 
 //$subject = getSubject($q);
