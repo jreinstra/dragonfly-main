@@ -1,7 +1,7 @@
 <?php
-echo "debug 5<br>";
-/*require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
-$q = urldecode($_GET["q"]);
+echo "debug 7<br>";
+require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
+/*$q = urldecode($_GET["q"]);
 echo "hola 1<br>";
 $uncut = explode(" ", $q);
 $words = array();
