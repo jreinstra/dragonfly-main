@@ -1,6 +1,6 @@
 <?php
 echo "debug 5<br>";
-require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
+/*require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
 $q = urldecode($_GET["q"]);
 echo "hola 1<br>";
 $uncut = explode(" ", $q);
@@ -91,6 +91,6 @@ while($row=mysql_fetch_array($result)){
 
 $result = array("Matches"=>$matches, "Subject"=>$q, "Facts"=>$facts);
 //echo "<pre>"; print_r($result); echo "</pre>";
-echo json_encode($result);
+echo json_encode($result);*/
 
 ?>
