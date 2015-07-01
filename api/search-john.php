@@ -1,9 +1,6 @@
 <?php
-error_reporting(E_ALL);
-echo "debug 18<br>";
 require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
 $q = urldecode($_GET["q"]);
-echo "hola 1<br>";
 $uncut = explode(" ", $q);
 $words = array();
 foreach($uncut as $word) {
@@ -12,19 +9,14 @@ foreach($uncut as $word) {
 	}
 }
 
-echo "<pre>"; print_r($words); echo "</pre>";
-
 $matches = array();
 foreach($words as $word) {
 	$word = strtolower($word);
 	$sql = "SELECT fact_id, occurrences FROM lexicon WHERE term=? ORDER BY occurrences DESC";
-	echo "hello 1<br>";
 	$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
-	echo "hello 2<br>";
 		mysqli_stmt_bind_param($stmt, 's', $word) or die(mysqli_stmt_error($stmt));
 		mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
 		mysqli_stmt_bind_result($stmt, $factID, $factMatches);
-	echo "hello 3<br>";
 	
 	$empty = true;
 	while(mysqli_stmt_fetch($stmt)) {
@@ -37,26 +29,23 @@ foreach($words as $word) {
 		}
 	}
 	mysqli_stmt_close($stmt);
-	echo "hello 4<br>";
 	if($empty == true) {
-		$query = strtolower($word);
+		$query = $word;
 		if(substr($query, 0, 1) != " ") $query = " " . $query;
 		if(substr($query, -1) != " ") $query = $query . " ";
-		echo "here 0 " . $query . "<br>";
+		$queryLike = "%" . $query . "%";
 		$sql = 'SELECT fact_id, fact FROM eb.facts WHERE LOWER(fact) LIKE ?';
 		$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
-			mysqli_stmt_bind_param($stmt, 's', '%' . $query . '%') or die(mysqli_stmt_error($stmt));
+			mysqli_stmt_bind_param($stmt, 's', $queryLike) or die(mysqli_stmt_error($stmt));
 			mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
 			mysqli_stmt_bind_result($stmt, $factID, $factText);
-		echo "here 1<br>";
-		/*$newFacts = array();
+		$newFacts = array();
 		while(mysqli_stmt_fetch($stmt)) {
 			$newFacts[] = array("ID"=>$factID, "Text"=>$factText);
 		}
 		mysqli_stmt_close($stmt);
-		echo "here 2<br>";
 		foreach($newFacts as $newFact) {
-			$newFactMatches = substr_count($newFact["Text"], $q);
+			$newFactMatches = substr_count(strtolower($newFact["Text"]), $query);
 			$sql = 'INSERT INTO lexicon (term, fact_id, occurrences) VALUES (?, ?, ?)';
 			$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
 				mysqli_stmt_bind_param($stmt, 'sii', $word, $newFact["ID"], $newFactMatches) or die(mysqli_stmt_error($stmt));
@@ -65,33 +54,33 @@ foreach($words as $word) {
 			if(!isset($matches[$newFact["ID"]])) $matches[$newFact["ID"]] = 0;
 			$matches[$newFact["ID"]] = $matches[$newFact["ID"]] + $newFactMatches;
 		}
-		echo "here 3<br>";*/
 	}
 }
 
-//$subject = getSubject($q);
-if(substr($q, 0, 1) != " ") $q = " " . $q;
-if(substr($q, -1) != " ") $q = $q . " ";
-
-$sql = 'SELECT fact FROM eb.facts WHERE LOWER(fact) LIKE "%' . strtolower($q) . '%"';
-
-$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
-	mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
-	mysqli_stmt_bind_result($stmt, $text);
+asort($matches);
+$matches = array_reverse($matches, true);
 
 $facts = array();
-while(mysqli_stmt_fetch($stmt)) {
-	$facts[] = $text;
+foreach($matches as $id=>$value) {
+	$sql = "SELECT fact FROM facts WHERE fact_id=? LIMIT 1";
+	$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
+		mysqli_stmt_bind_param($stmt, 'i', $id) or die(mysqli_stmt_error($stmt));
+		mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
+		mysqli_stmt_bind_result($stmt, $factText);
+		mysqli_stmt_fetch($stmt);
+		mysqli_stmt_close($stmt);
+	$facts[] = $factText;
+	if(count($facts) >= 10) break;
 }
 
 
 
-while($row=mysql_fetch_array($result)){
+/*while($row=mysql_fetch_array($result)){
       array_push($facts,$row['fact']);
       echo $row['fact'];
-}
+}*/
 
-$result = array("Matches"=>$matches, "Subject"=>$q, "Facts"=>$facts);
+$result = array("Subject"=>$q, "Facts"=>$facts);
 //echo "<pre>"; print_r($result); echo "</pre>";
 echo json_encode($result);
 

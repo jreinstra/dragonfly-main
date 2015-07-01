@@ -6,7 +6,7 @@ if(!isset($q) || strlen($q) < 1) {
 }
 $q = strtolower($q);
 //$results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . urlencode($q)); //calls the suggest API to store the search results
-$results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search-codeday.php?q=" . urlencode($q)); //calls the seach API to get the search data
+$results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search-john.php?q=" . urlencode($q)); //calls the seach API to get the search data
 $searchname = urlencode($q); //making a new variable for the search query 
 $searchname = str_replace("+"," ",$searchname); //removing the "+" marks in the string
 $searchname = urlencode($q); //making a new variable for the search query 
