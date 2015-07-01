@@ -35,14 +35,14 @@ foreach($words as $word) {
 		}
 	}
 	mysqli_stmt_close($stmt);
-	
+	echo "hello 4<br>";
 	if($empty == true) {
 		$q = strtolower($word);
 		if(substr($q, 0, 1) != " ") $q = " " . $q;
 		if(substr($q, -1) != " ") $q = $q . " ";
-		$sql = 'SELECT fact_id, fact FROM eb.facts WHERE LOWER(fact) LIKE "%?%"';
+		$sql = 'SELECT fact_id, fact FROM eb.facts WHERE LOWER(fact) LIKE ?';
 		$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
-			mysqli_stmt_bind_param($stmt, 's', $q) or die(mysqli_stmt_error($stmt));
+			mysqli_stmt_bind_param($stmt, 's', '%' . $q . '%') or die(mysqli_stmt_error($stmt));
 			mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
 			mysqli_stmt_bind_result($stmt, $factID, $factText);
 		echo "here 1<br>";
