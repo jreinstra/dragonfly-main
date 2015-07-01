@@ -33,7 +33,7 @@ foreach($words as $word) {
 	}
 	mysqli_stmt_close($stmt);
 	
-	if($empty) {
+	if($empty == true) {
 		$q = strtolower($word);
 		if(substr($q, 0, 1) != " ") $q = " " . $q;
 		if(substr($q, -1) != " ") $q = $q . " ";
@@ -42,13 +42,13 @@ foreach($words as $word) {
 			mysqli_stmt_bind_param($stmt, 's', $q) or die(mysqli_stmt_error($stmt));
 			mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
 			mysqli_stmt_bind_result($stmt, $factID, $factText);
-		
+		echo "here 1<br>";
 		$newFacts = array();
 		while(mysqli_stmt_fetch($stmt)) {
 			$newFacts[] = array("ID"=>$factID, "Text"=>$factText);
 		}
 		mysqli_stmt_close($stmt);
-		
+		echo "here 2<br>";
 		foreach($newFacts as $newFact) {
 			$newFactMatches = substr_count($newFact["Text"], $q);
 			$sql = 'INSERT INTO lexicon (term, fact_id, occurrences) VALUES (?, ?, ?)';
@@ -59,6 +59,7 @@ foreach($words as $word) {
 			if(!isset($matches[$newFact["ID"]])) $matches[$newFact["ID"]] = 0;
 			$matches[$newFact["ID"]] = $matches[$newFact["ID"]] + $newFactMatches;
 		}
+		echo "here 3<br>";
 	}
 }
 
