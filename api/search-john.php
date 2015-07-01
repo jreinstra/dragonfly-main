@@ -16,10 +16,13 @@ $matches = array();
 foreach($words as $word) {
 	$word = strtolower($word);
 	$sql = "SELECT fact_id, occurrences FROM lexicon WHERE term=? ORDER BY occurrences DESC";
+	echo "hello 1<br>";
 	$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
+	echo "hello 2<br>";
 		mysqli_stmt_bind_param($stmt, 's', $word) or die(mysqli_stmt_error($stmt));
 		mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
 		mysqli_stmt_bind_result($stmt, $factID, $factMatches);
+	echo "hello 3<br>";
 	
 	$empty = true;
 	while(mysqli_stmt_fetch($stmt)) {
