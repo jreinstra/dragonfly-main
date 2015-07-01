@@ -1,5 +1,5 @@
 <?php
-echo "debug 10<br>";
+echo "debug 11<br>";
 require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
 $q = urldecode($_GET["q"]);
 echo "hola 1<br>";
@@ -15,8 +15,8 @@ echo "<pre>"; print_r($words); echo "</pre>";
 
 $matches = array();
 foreach($words as $word) {
-	$word = strtolower($word);
-	$sql = "SELECT fact_id, occurrences FROM lexicon WHERE term=? ORDER BY occurrences DESC";
+	/*$word = strtolower($word);
+	$sql = "SELECT fact_id, occurrences FROM lexicon WHERE term=? ORDER BY occurrences DESC";*/
 	echo "hello 1<br>";
 	/*$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
 	echo "hello 2<br>";
@@ -38,12 +38,12 @@ foreach($words as $word) {
 	mysqli_stmt_close($stmt);
 	echo "hello 4<br>";
 	/*if($empty == true) {
-		$q = strtolower($word);
-		if(substr($q, 0, 1) != " ") $q = " " . $q;
-		if(substr($q, -1) != " ") $q = $q . " ";
+		$query = strtolower($word);
+		if(substr($query, 0, 1) != " ") $query = " " . $query;
+		if(substr($query, -1) != " ") $query = $query . " ";
 		$sql = 'SELECT fact_id, fact FROM eb.facts WHERE LOWER(fact) LIKE ?';
 		$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
-			mysqli_stmt_bind_param($stmt, 's', '%' . $q . '%') or die(mysqli_stmt_error($stmt));
+			mysqli_stmt_bind_param($stmt, 's', '%' . $query . '%') or die(mysqli_stmt_error($stmt));
 			mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
 			mysqli_stmt_bind_result($stmt, $factID, $factText);
 		echo "here 1<br>";
