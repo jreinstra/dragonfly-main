@@ -1,5 +1,5 @@
 <?php
-echo "debug 15<br>";
+echo "debug 16<br>";
 require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
 $q = urldecode($_GET["q"]);
 echo "hola 1<br>";
@@ -42,29 +42,33 @@ foreach($words as $word) {
 		if(substr($query, 0, 1) != " ") $query = " " . $query;
 		if(substr($query, -1) != " ") $query = $query . " ";
 		echo "here 0 " . $query . "<br>";
-		/*$sql = 'SELECT fact_id, fact FROM eb.facts WHERE LOWER(fact) LIKE ?';
-		$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
-			mysqli_stmt_bind_param($stmt, 's', '%' . $query . '%') or die(mysqli_stmt_error($stmt));
-			mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
-			mysqli_stmt_bind_result($stmt, $factID, $factText);
-		echo "here 1<br>";
-		$newFacts = array();
-		while(mysqli_stmt_fetch($stmt)) {
-			$newFacts[] = array("ID"=>$factID, "Text"=>$factText);
-		}
-		mysqli_stmt_close($stmt);
-		echo "here 2<br>";
-		foreach($newFacts as $newFact) {
-			$newFactMatches = substr_count($newFact["Text"], $q);
-			$sql = 'INSERT INTO lexicon (term, fact_id, occurrences) VALUES (?, ?, ?)';
+		$sql = 'SELECT fact_id, fact FROM eb.facts WHERE LOWER(fact) LIKE ?';
+		try {
 			$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
-				mysqli_stmt_bind_param($stmt, 'sii', $word, $newFact["ID"], $newFactMatches) or die(mysqli_stmt_error($stmt));
+				mysqli_stmt_bind_param($stmt, 's', '%' . $query . '%') or die(mysqli_stmt_error($stmt));
 				mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
-				mysqli_stmt_close($stmt);
-			if(!isset($matches[$newFact["ID"]])) $matches[$newFact["ID"]] = 0;
-			$matches[$newFact["ID"]] = $matches[$newFact["ID"]] + $newFactMatches;
+				mysqli_stmt_bind_result($stmt, $factID, $factText);
+			echo "here 1<br>";
+			$newFacts = array();
+			while(mysqli_stmt_fetch($stmt)) {
+				$newFacts[] = array("ID"=>$factID, "Text"=>$factText);
+			}
+			mysqli_stmt_close($stmt);
+			echo "here 2<br>";
+			foreach($newFacts as $newFact) {
+				$newFactMatches = substr_count($newFact["Text"], $q);
+				$sql = 'INSERT INTO lexicon (term, fact_id, occurrences) VALUES (?, ?, ?)';
+				$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
+					mysqli_stmt_bind_param($stmt, 'sii', $word, $newFact["ID"], $newFactMatches) or die(mysqli_stmt_error($stmt));
+					mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
+					mysqli_stmt_close($stmt);
+				if(!isset($matches[$newFact["ID"]])) $matches[$newFact["ID"]] = 0;
+				$matches[$newFact["ID"]] = $matches[$newFact["ID"]] + $newFactMatches;
+			}
+			echo "here 3<br>";
+		} catch(Exception $e) {
+			echo "Error: " . $e;
 		}
-		echo "here 3<br>";*/
 	}
 }
 
