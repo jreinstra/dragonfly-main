@@ -1,5 +1,5 @@
 <?php
-echo "debug 14<br>";
+echo "debug 15<br>";
 require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
 $q = urldecode($_GET["q"]);
 echo "hola 1<br>";
@@ -41,7 +41,8 @@ foreach($words as $word) {
 		$query = strtolower($word);
 		if(substr($query, 0, 1) != " ") $query = " " . $query;
 		if(substr($query, -1) != " ") $query = $query . " ";
-		$sql = 'SELECT fact_id, fact FROM eb.facts WHERE LOWER(fact) LIKE ?';
+		echo "here 0 " . $query . "<br>";
+		/*$sql = 'SELECT fact_id, fact FROM eb.facts WHERE LOWER(fact) LIKE ?';
 		$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
 			mysqli_stmt_bind_param($stmt, 's', '%' . $query . '%') or die(mysqli_stmt_error($stmt));
 			mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
@@ -63,7 +64,7 @@ foreach($words as $word) {
 			if(!isset($matches[$newFact["ID"]])) $matches[$newFact["ID"]] = 0;
 			$matches[$newFact["ID"]] = $matches[$newFact["ID"]] + $newFactMatches;
 		}
-		echo "here 3<br>";
+		echo "here 3<br>";*/
 	}
 }
 
