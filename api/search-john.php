@@ -1,5 +1,5 @@
 <?php
-echo "debug 13<br>";
+echo "debug 14<br>";
 require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
 $q = urldecode($_GET["q"]);
 echo "hola 1<br>";
@@ -37,7 +37,7 @@ foreach($words as $word) {
 	}
 	mysqli_stmt_close($stmt);
 	echo "hello 4<br>";
-	/*if($empty == true) {
+	if($empty == true) {
 		$query = strtolower($word);
 		if(substr($query, 0, 1) != " ") $query = " " . $query;
 		if(substr($query, -1) != " ") $query = $query . " ";
@@ -64,7 +64,7 @@ foreach($words as $word) {
 			$matches[$newFact["ID"]] = $matches[$newFact["ID"]] + $newFactMatches;
 		}
 		echo "here 3<br>";
-	}*/
+	}
 }
 
 //$subject = getSubject($q);
