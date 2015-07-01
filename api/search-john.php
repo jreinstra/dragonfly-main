@@ -10,6 +10,8 @@ foreach($uncut as $word) {
 	}
 }
 
+echo "<pre>"; print_r($words); echo "</pre>";
+
 $matches = array();
 foreach($words as $word) {
 	$word = strtolower($word);
