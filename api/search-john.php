@@ -1,7 +1,7 @@
 <?php
 echo "debug 7<br>";
 require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
-/*$q = urldecode($_GET["q"]);
+$q = urldecode($_GET["q"]);
 echo "hola 1<br>";
 $uncut = explode(" ", $q);
 $words = array();
@@ -13,7 +13,7 @@ foreach($uncut as $word) {
 
 echo "<pre>"; print_r($words); echo "</pre>";
 
-$matches = array();
+/*$matches = array();
 foreach($words as $word) {
 	$word = strtolower($word);
 	$sql = "SELECT fact_id, occurrences FROM lexicon WHERE term=? ORDER BY occurrences DESC";
