@@ -1,5 +1,6 @@
 <?php
-echo "debug 17<br>";
+error_reporting(E_ALL);
+echo "debug 18<br>";
 require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
 $q = urldecode($_GET["q"]);
 echo "hola 1<br>";
