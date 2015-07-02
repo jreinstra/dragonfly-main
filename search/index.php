@@ -4,6 +4,7 @@ if(!isset($q) || strlen($q) < 1) {
 	header("Location: /");
 	die();
 }
+  header("Access-Control-Allow-Origin: *");
 $q = strtolower($q);
 //$results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . urlencode($q)); //calls the suggest API to store the search results
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search-john.php?q=" . urlencode($q)); //calls the seach API to get the search data
@@ -19,6 +20,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
 
   $n = rand(0, count($rad)-1); // generate random number size of the array
   $radsearch = "$rad[$n]"; // set variable equal to which random filename was chosen
+
 
 ?>
 <!-- saved from url=(0039)http://dragonflyapp.com/betasearch.html -->
