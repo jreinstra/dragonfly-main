@@ -1,7 +1,7 @@
 <?php
 require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/mysql/connect_eb.php");
 $q = urldecode($_GET["q"]);
-
+  header("Access-Control-Allow-Origin: *");
 $uncut = explode(" ", $q);
 $words = array();
 foreach($uncut as $word) {
@@ -35,5 +35,6 @@ while($row=mysql_fetch_array($result)){
 $result = array("Words"=>$words, "Subject"=>$q, "Facts"=>$facts);
 //echo "<pre>"; print_r($result); echo "</pre>";
 echo json_encode($result);
+
 
 ?>
