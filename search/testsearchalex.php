@@ -78,7 +78,7 @@ color:#606060 ;
     <div class="col-xs-10 col-sm-6 col-md-8">
       <a href="/" style="text-decoration:none;"><h1 class="text-center" style=" color: #D92F03; font-size: 40px;">dragonfly - <i>beta</i> </h1></a>
 
-   <form action="/search/testsearchalexcodeday.php" method="GET">
+   <form action="/search/index.php" method="GET">
        <div class="input-group">
          <input  name="q" value="<?php echo $searchname; ?>" type="text" class="form-control" placeholder="What are you looking for?">
          <span class="input-group-btn">
@@ -142,7 +142,7 @@ $("#myModal").css("z-index", "1500");
 <?php
 	$i = 1;
 	foreach($facts as $fact) {
-		include($_SERVER["DOCUMENT_ROOT"] . "/resources/page/modules/factsbetaalexcodeday.php");
+		include($_SERVER["DOCUMENT_ROOT"] . "/resources/page/modules/factsnew.php");
 		$i++;
 	}
 ?>
