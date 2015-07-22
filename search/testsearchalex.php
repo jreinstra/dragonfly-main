@@ -93,10 +93,10 @@ color:#606060 ;
  <!-- Nav tabs -->
  <ul class="nav nav-tabs" role="tablist">
    <li role="presentation" class="active"><a href="#1" aria-controls="1" role="tab" data-toggle="tab" aria-expanded="true">Facts</a></li>
+	<li role="presentation"><a href="#5" aria-controls="5" role="tab" data-toggle="tab" aria-expanded="true">Wolfram Alpha</a></li>
    <li role="presentation"><a href="#2" aria-controls="2" role="tab" data-toggle="tab" aria-expanded="true">Images</a></li>
    <li role="presentation"><a href="#3" aria-controls="3" role="tab" data-toggle="tab" aria-expanded="true">Videos</a></li>
    <li role="presentation"><a href="#4" aria-controls="4" role="tab" data-toggle="tab" aria-expanded="true">Books</a></li>
-   <li role="presentation"><a href="#5" aria-controls="5" role="tab" data-toggle="tab" aria-expanded="true">Articles</a></li>
 
 <div class="text-right" style="padding-left:45%;">
 <!-- Button trigger modal -->
@@ -317,9 +317,9 @@ $("#myModal").css("z-index", "1500");
 <!-- START OF ARTICLES -->
 
       <div role="tabpanel" class="tab-pane" id="5">
-             <h1 style="color:#33CCFF">Articles </h1>
+             <h1 style="color:#33CCFF">Wolfram Alpha </h1>
 
-           <p> Not sure how we're going to do this yet. Go Jackon's team!  </p>
+          <iframe src="http://harvix.com/wolf.cgi?<?php echo $searchname; ?>" allowTransparency="true"  width="100%" height="300px" frameborder="0"></iframe>
       </div>
 
  </div>
