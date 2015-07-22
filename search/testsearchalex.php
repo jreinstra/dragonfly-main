@@ -7,7 +7,7 @@ if(!isset($q) || strlen($q) < 1) {
 $q = strtolower($q);
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . urlencode($q)); //calls the suggest API to store the search results
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search.php?q=" . urlencode($q)); //calls the seach API to get the search data
-$searchname = urlencode($q); //making a new variable for the search query 
+$searchname = urlencode($q); //making a new variable for the search query
 $searchname = str_replace("+"," ",$searchname); //removing the "+" marks in the string
 $results = json_decode($results, true);
 $subject = $results["Subject"];
@@ -24,25 +24,25 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
 </script>
 
 
- 
+
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="">
    <meta name="author" content="">
 
-   <title><?php echo $searchname; ?> - dragonfly</title>
+   <title><?php echo $searchname; ?> - Dragonfly</title>
 
    <!-- Core CSS -->
-       <link href="http://beam.la/bootstrap.css" rel="stylesheet"> 
+       <link href="http://beam.la/bootstrap.css" rel="stylesheet">
        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic">
        <link rel="stylesheet" href="http://dragonflyapp.com/modern.css">
- 
-   <!-- Javascript for spech API -->    
+
+   <!-- Javascript for spech API -->
        <link href="http://beam.la/glyphicons-halflings-regular.svg">
        <script src="http://code.jquery.com/jquery-git2.js"></script>
        <script type="text/javascript" src="http://dragonflysearch.com/scripts/responsivevoice.js"></script>
 
- 
+
 
    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
    <!--[if lt IE 9]>
@@ -72,7 +72,7 @@ color:#606060 ;
 }
 </style></head>
 
- 
+
  <body>
   <div>
     <div class="col-xs-10 col-sm-6 col-md-8">
@@ -132,13 +132,13 @@ $("#myModal").css("z-index", "1500");
 
  <!-- Tab Content -->
  <div class="tab-content">
- 
+
  <!-- FACTS SECTION TAB START -->
  <div role="tabpanel" class="tab-pane active" id="1">
    <h1 style="color: 47A2B2"><?php echo $searchname; ?> </h1>
    <p>
    </p><hr class="featurette-divider">
-<!-- This is where all the facts are pulled from. Facts are not loaded and the code for them is not on this page --> 
+<!-- This is where all the facts are pulled from. Facts are not loaded and the code for them is not on this page -->
 <?php
 	$i = 1;
 	foreach($facts as $fact) {
@@ -150,14 +150,14 @@ $("#myModal").css("z-index", "1500");
 <!-- Facts will continue "infinitely" because we're pulling from a seperate file -->
 
    </div>
-      
+
 <!-- START OF IMAGES CONTENT-->
   <div role="tabpanel" class="tab-pane" id="2">
 
     <h1 style="color:#330099">Images </h1>
     <hr class="featurette-divider">
-    
-    
+
+
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 		    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 		<html xmlns="http://www.w3.org/1999/xhtml">
@@ -201,20 +201,20 @@ $("#myModal").css("z-index", "1500");
 		  </body>
 		  <!--Link: https://developers.google.com/web-search/docs/?csw=1#fonje-->
 		</html>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  </div>
-<!-- END OF OF IMAGES --> 
 
-<!-- START OF VIDEOS --> 
+
+
+
+
+
+
+
+
+
+  </div>
+<!-- END OF OF IMAGES -->
+
+<!-- START OF VIDEOS -->
    <div role="tabpanel" class="tab-pane" id="3">
        <h1 style="color:#33CCFF">Videos </h1>
 <hr class="featurette-divider">
@@ -263,11 +263,11 @@ $("#myModal").css("z-index", "1500");
 </html>
 
    </div>
-<!-- START OF BOOKS --> 
+<!-- START OF BOOKS -->
 
    <div role="tabpanel" class="tab-pane" id="4">
     <h1 style="color:#33CCFF">Books </h1>
-    
+
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 				"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 		<html xmlns="http://www.w3.org/1999/xhtml">
@@ -311,10 +311,10 @@ $("#myModal").css("z-index", "1500");
 			</body>
 			<!--Link: https://developers.google.com/web-search/docs/?csw=1#fonje-->
 		</html>
-   
+
    </div>
-      
-<!-- START OF ARTICLES --> 
+
+<!-- START OF ARTICLES -->
 
       <div role="tabpanel" class="tab-pane" id="5">
              <h1 style="color:#33CCFF">Articles </h1>
@@ -328,23 +328,23 @@ $("#myModal").css("z-index", "1500");
  <!-- End of tabs -->
 
    </div>
- 
 
 
-   
- 
+
+
+
 
 
 
 <div class="row">
-<!-- originally thrown in to increase distance between the notes content and the top of the page. --> 
+<!-- originally thrown in to increase distance between the notes content and the top of the page. -->
  <div class="col-xs-6 col-sm-3"></div>
  <div class="col-xs-6 col-sm-3"></div>
    <div class="col-xs-6 col-sm-3"></div>
 
 
  <!-- START OF NOTES -->
- <div style="padding-top:90px;" class="col-xs-6 col-sm-3">  
+ <div style="padding-top:90px;" class="col-xs-6 col-sm-3">
  <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:30%; height:350px;"> <form name="contactform" method="post" action="/storefile.php">
 <table style="width:100%; padding:4px;">
 
@@ -373,9 +373,9 @@ $("#myModal").css("z-index", "1500");
 </div>
 </form>
 
-<!-- END NOTES AND EMAIL FORM -->    
+<!-- END NOTES AND EMAIL FORM -->
 
-<!-- End Email Form -->    
+<!-- End Email Form -->
 
   </div>
 
@@ -384,14 +384,14 @@ $("#myModal").css("z-index", "1500");
    <!-- Bootstrap core JavaScript
    ================================================== -->
    <!-- Placed at the end of the document  -->
-  
+
   <script src="http://beam.la/npm.js"></script>
    <script src="http://beam.la/bootstrap.js"></script>
      <script src="http://beam.la/transition.js"></script>
      <script src="http://beam.la/collapse.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script> --> 
+<!-- <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script> -->
  <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
  <!--SCRIPTS-->
@@ -407,5 +407,5 @@ $("#myModal").css("z-index", "1500");
 
 </script>
 
- 
+
 </div><div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">         <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1426438929368">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=dragonflyapp.com%2C%2F%2Fdragonflyapp.com%2Chttp%3A%2F%2Fdragonflyapp.com">         <embed src="/assets/flash/ZeroClipboard.swf?noCache=1426438929368" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=dragonflyapp.com%2C%2F%2Fdragonflyapp.com%2Chttp%3A%2F%2Fdragonflyapp.com" scale="exactfit">                </object></div> </div> </body> </html>
