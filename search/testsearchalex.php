@@ -6,7 +6,7 @@ if(!isset($q) || strlen($q) < 1) {
 }
 $q = strtolower($q);
 $results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/suggest.php?q=" . urlencode($q)); //calls the suggest API to store the search results
-$results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search.php?q=" . urlencode($q)); //calls the seach API to get the search data
+$results = file_get_contents("http://" . $_SERVER["HTTP_HOST"] . "/api/search-john.php?q=" . urlencode($q)); //calls the seach API to get the search data
 $searchname = urlencode($q); //making a new variable for the search query
 $searchname = str_replace("+"," ",$searchname); //removing the "+" marks in the string
 $results = json_decode($results, true);
@@ -30,10 +30,10 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <meta name="description" content="">
    <meta name="author" content="">
 
-   <title><?php echo $searchname; ?> - Dragonfly</title>
+   <title><?php echo $searchname; ?> - dragonfly</title>
 
    <!-- Core CSS -->
-       <link href="http://beam.la/bootstrap.css" rel="stylesheet">
+       <link href="http://dragonflysearch.com/stylesheets/bootstrap.css" rel="stylesheet">
        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic">
        <link rel="stylesheet" href="http://dragonflyapp.com/modern.css">
 
@@ -385,14 +385,13 @@ $("#myModal").css("z-index", "1500");
    ================================================== -->
    <!-- Placed at the end of the document  -->
 
-  <script src="http://beam.la/npm.js"></script>
-   <script src="http://beam.la/bootstrap.js"></script>
-     <script src="http://beam.la/transition.js"></script>
-     <script src="http://beam.la/collapse.js"></script>
+   <script src="http://dragonflysearch.com/scripts/bootstrap.js"></script>
+     <script src="http://dragonflysearch.com/scripts/transition.js"></script>
+     <script src="http://dragonflysearch.com/scripts/collapse.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script> -->
- <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+<!-- <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+ <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>-->
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
  <!--SCRIPTS-->
 <!--END SCRIPTS-->
