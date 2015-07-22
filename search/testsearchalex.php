@@ -319,7 +319,7 @@ $("#myModal").css("z-index", "1500");
       <div role="tabpanel" class="tab-pane" id="5">
              <h1 style="color:#33CCFF">Wolfram Alpha </h1>
 
-          <iframe src="http://harvix.com/wolf.cgi?<?php echo $searchname; ?>" allowTransparency="true"  width="100%" height="300px" frameborder="0"></iframe>
+          <iframe src="http://harvix.com/wolf.cgi?<?php echo $searchname; ?>" allowTransparency="true"  width="100%" height="100%" frameborder="0"></iframe>
       </div>
 
  </div>
