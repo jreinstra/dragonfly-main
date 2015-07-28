@@ -23,6 +23,7 @@ foreach($words as $word) {
 		$empty = false;
 		if(isset($matches[$factID])) {
 			$matches[$factID] = $matches[$factID] + $factMatches;
+			$matches[$factID] = $matches[$factID] * 10;
 		}
 		else {
 			$matches[$factID] = $factMatches;
@@ -45,10 +46,10 @@ foreach($words as $word) {
 		}
 		mysqli_stmt_close($stmt);
 		foreach($newFacts as $newFact) {
-			$newFactMatches = substr_count(strtolower($newFact["Text"]), $query);
+			$newFactMatches = number_format(substr_count(strtolower($newFact["Text"]), $query), 1) / strlen($newFact["Text"]);
 			$sql = 'INSERT INTO lexicon (term, fact_id, occurrences) VALUES (?, ?, ?)';
 			$stmt = mysqli_prepare($con, $sql) or die(mysqli_error($con));
-				mysqli_stmt_bind_param($stmt, 'sii', $word, $newFact["ID"], $newFactMatches) or die(mysqli_stmt_error($stmt));
+				mysqli_stmt_bind_param($stmt, 'sid', $word, $newFact["ID"], $newFactMatches) or die(mysqli_stmt_error($stmt));
 				mysqli_stmt_execute($stmt) or die(mysqli_stmt_error($stmt));
 				mysqli_stmt_close($stmt);
 			if(!isset($matches[$newFact["ID"]])) $matches[$newFact["ID"]] = 0;
