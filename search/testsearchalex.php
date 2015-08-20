@@ -104,10 +104,10 @@ color:#606060 ;
 <div class="text-right" style="padding-left:45%;">
 <!-- Button trigger modal -->
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+<!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   Launch demo modal
 </button>
-
+-->
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -128,9 +128,9 @@ color:#606060 ;
 </div>
 
 <div class="btn-group" style="padding:5px; color:rgba(255, 255,255, .6)">
-<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" onClick='document.getElementById("survey").src="https://www.surveymonkey.com/s/PJMKQVL";'>
+<!--<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" onClick='document.getElementById("survey").src="https://www.surveymonkey.com/s/PJMKQVL";'>
   Feedback!
-</button>
+</button>-->
 <button  type="button" class="btn btn-default"><a   href="http://dragonflysearch.com/<?php echo $radsearch; ?>" style="color:black" >Random!</a></button>
 </div>
 <script>$("#myModal").modal("show");
