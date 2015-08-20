@@ -36,7 +36,7 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <!--RUNNING BOOTSTRAP VERSION 3.3.5 -->
        <link href="http://dragonflysearch.com/stylesheets/bootstrap335.min.css" rel="stylesheet">
        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic">
-       <link rel="stylesheet" href="http://dragonflyapp.com/modern.css">
+       <!--<link rel="stylesheet" href="http://dragonflyapp.com/modern.css">-->
 
    <!-- Javascript for spech API -->
        <link href="http://beam.la/glyphicons-halflings-regular.svg">
