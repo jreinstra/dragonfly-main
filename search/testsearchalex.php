@@ -33,7 +33,8 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <title><?php echo $searchname; ?> - dragonfly</title>
 
    <!-- Core CSS -->
-       <link href="http://dragonflysearch.com/stylesheets/bootstrap.css" rel="stylesheet">
+   <!--RUNNING BOOTSTRAP VERSION 3.3.5 -->
+       <link href="http://dragonflysearch.com/stylesheets/bootstrap335.min.css" rel="stylesheet">
        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic">
        <link rel="stylesheet" href="http://dragonflyapp.com/modern.css">
 
@@ -79,7 +80,7 @@ color:#606060 ;
     <div class="col-xs-10 col-sm-6 col-md-8">
       <a href="/" style="text-decoration:none;"><h1 class="text-center" style=" color: #D92F03; font-size: 40px;">dragonfly - <i>beta</i> </h1></a>
 
-   <form action="/search/testsearchalex.php" method="GET">
+   <form action="/search/" method="GET">
        <div class="input-group">
          <input  name="q" value="<?php echo $searchname; ?>" type="text" class="form-control" placeholder="What are you looking for?">
          <span class="input-group-btn">
@@ -386,10 +387,10 @@ $("#myModal").css("z-index", "1500");
    ================================================== -->
    <!-- Placed at the end of the document  -->
 
-   <script src="http://dragonflysearch.com/scripts/bootstrap.js"></script>
+   <script src="http://dragonflysearch.com/scripts/bootstrap335.js"></script>
      <script src="http://dragonflysearch.com/scripts/transition.js"></script>
      <script src="http://dragonflysearch.com/scripts/collapse.js"></script>
-<script src="http://dragonflysearch.com/scripts/modal.js"></script>
+<script src="http://dragonflysearch.com/scripts/modal335.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
  <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>-->
