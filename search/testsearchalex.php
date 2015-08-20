@@ -42,8 +42,8 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
        <!-- COMMENT BACK IN <link href="http://beam.la/glyphicons-halflings-regular.svg">-->
        
       <!-- COMMENT BACK IN <script type="text/javascript" src="http://dragonflysearch.com/scripts/responsivevoice.js"></script>-->
-<!-- COMMENT BACK IN<script src="http://apis.google.com/js/platform.js"></script>-->
-<!-- COMMENT BACK IN<script src="https://apis.google.com/js/platform.js"></script>-->
+<script src="http://apis.google.com/js/platform.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
 
 <!--<script src="http://code.jquery.com/jquery-git2.js"></script>-->
 
