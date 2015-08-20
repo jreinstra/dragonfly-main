@@ -17,7 +17,7 @@ if(isset($_POST['email'])) {
      
     // validation expected data exists
     if( !isset($_POST['email']) ||
-        !isset($_POST['comments'])) {
+        !isset($_POST['text'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
      
