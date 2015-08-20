@@ -414,8 +414,8 @@ $("#myModal").css("z-index", "1500");
 
    <script src="http://dragonflysearch.com/scripts/bootstrap335.js"></script>
     <!-- COMMENT BACK IN  <script src="http://dragonflysearch.com/scripts/transition.js"></script>
-   <!-- COMMENT BACK IN  <script src="http://dragonflysearch.com/scripts/collapse.js"></script>
-<!-- COMMENT BACK IN <script src="http://dragonflysearch.com/scripts/modal335.js"></script>
+   <!-- COMMENT BACK IN  <script src="http://dragonflysearch.com/scripts/collapse.js"></script>-->
+ <script src="http://dragonflysearch.com/scripts/modal335.js"></script> 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
  <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>-->
