@@ -41,11 +41,11 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
    <!-- Javascript for spech API -->
        <!-- COMMENT BACK IN <link href="http://beam.la/glyphicons-halflings-regular.svg">-->
        
-      <!-- COMMENT BACK IN <script type="text/javascript" src="http://dragonflysearch.com/scripts/responsivevoice.js"></script>-->
+    <script type="text/javascript" src="http://dragonflysearch.com/scripts/responsivevoice.js"></script>
 <script src="http://apis.google.com/js/platform.js"></script>
 <script src="https://apis.google.com/js/platform.js"></script>
 
-<!--<script src="http://code.jquery.com/jquery-git2.js"></script>-->
+<script src="http://code.jquery.com/jquery-git2.js"></script>
 
    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
    <!--[if lt IE 9]>
