@@ -2,9 +2,10 @@
 function ButtonClick_Test<?php echo $i; ?>()
 {
 
-document.getElementById("text").value += '<?php echo $fact; ?>' + 'http://www.britannica.com/search?query=<?php echo $subject; ?> ';
+document.getElementById("text").value += "<?php echo $fact; ?>" + "http://www.britannica.com/search?query=<?php echo $subject; ?>";
 }
 </script>
+
 <blockquote>
 
 
