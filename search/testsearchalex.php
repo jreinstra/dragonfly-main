@@ -41,7 +41,8 @@ $rad = array('search/?q=steve+jobs', 'search/?q=Colbert+report', 'search/?q=Mito
        <link href="http://beam.la/glyphicons-halflings-regular.svg">
        <script src="http://code.jquery.com/jquery-git2.js"></script>
        <script type="text/javascript" src="http://dragonflysearch.com/scripts/responsivevoice.js"></script>
-
+<script src="http://apis.google.com/js/platform.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
 
 
    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
