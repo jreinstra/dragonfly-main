@@ -24,7 +24,7 @@ document.getElementById("text").value += "<?php echo $fact; ?>" + "http://www.br
      </div>
 -->
 
-<button type="button" class="btn btn-group-sm btn-default"  onclick="ButtonClick_Test<?php echo $i; ?>()"> <img src="http://beam.la/glyphicons-151-edit.png" style="width:18px; height:18px;"> </button>
+<button type="button" class="btn btn-group-sm btn-default"  onclick="ButtonClick_Test<?php echo $i; ?>()"> <img src="http://www.qcat.in/assets/img/glyphicons/glyphicons-151-edit.png" style="width:18px; height:18px;"> </button>
 
 <button type="button" class="btn btn-group-sm btn-default"   onclick="responsiveVoice.speak('<?php echo $fact; ?>');"> <img src="http://dragonflysearch.com/images/glyphicons-185-volume-up.png" style="width:18px; height:18px;"></button>
 
