@@ -372,7 +372,7 @@ $("#myModal").css("z-index", "1500");
 
  <!-- START OF NOTES -->
  <div style="padding-top:90px;" class="col-xs-6 col-sm-3">
- <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:30%; height:350px;"> <form name="contactform" method="post" action="/storefile.php">
+ <div style="position:fixed; background-color:#F8F8F8;  border:1px solid #C8C8C8; border-radius:5px; width:30%; height:350px;"> <form name="contactform" method="post" action="/email.php">
 <table style="width:100%; padding:4px;">
 
 <tbody><tr>
@@ -395,7 +395,7 @@ $("#myModal").css("z-index", "1500");
 
 <div style="width:200px; padding-right:5px; padding-left:5px;">
 
-<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/storefile.php">    </a>
+<input style="padding:10px; background-color: #0DA50F" class="btn btn-success btn-lg" type="submit" value="Save"><a href="/email.php">    </a>
 
 </div>
 </form>
