@@ -12,4 +12,6 @@ Dragonfly Search
 </ol>
 
 <h1>How to use</h1>
-<p></p>
+<p>To edit the general search page, go to /search/ folder.</p>
+<p>To edit the contents of the UI of the facts in the /resources/page/modules/ folder. </p>
+<p>To edit the API's access them in the /api/ folder. </p>
